@@ -1,0 +1,15 @@
+- name: Go
+  percentage: 75
+  color: info
+
+- name: Python
+  percentage: 55
+  color: secondary
+
+- name: OOP
+  percentage: 48
+  color:
+
+- name: Algorithms and data structures
+  percentage: 68
+  color: danger
