@@ -1,0 +1,85 @@
+
+- title: How to develop and design systems of any complexity using OOP, 2nd OOAD course.
+  where: skillsmart.ru
+  from: Apr 2022
+  description: The course explores a deep understanding of the principles of object-oriented development and OO design, including SOLID, applicable to the creation of systems of any complexity, got acquainted with inheritance, composition, dynamic binding and polymorphism in the context of programming in large.
+
+- title: How to properly design classes based on abstract data types, 1st OOAD course
+  where: skillsmart.ru
+  from: Dec 2022
+  description: The course studies the design of OOP class structures.
+
+- title: Practice in programming on ADS, first part.
+  where: skillsmart.ru
+  from: Jul 2022
+  description: Second take of this course, but no in Go language.
+
+- title: Object-oriented programming model
+  where: skillsmart.ru
+  from: Jul 2022
+  description: A course covering a scientific view of the concept of object-oriented programming, its internal structure, key constituent elements and principles, the correct application of the OOP paradigm and inheritance in design.
+
+- title: Imperative Programing model
+  where: skillsmart.ru
+  from: Jun 2022
+  description: The course covering a scientific view of the principles and practices of everyday imperative programming as an extension of the declarative computational model.
+
+- title: Functions, Methods, and Interfaces in Go
+  where: coursera.org Ian Harris course
+  from: Apr 2022
+  description: Continue your exploration of the Go programming language as you learn about functions, methods, and interfaces. Topics include the implementation of functions, function types, object-orientation in Go, methods, and class instantiation. As with the first course in this series, you’ll have an opportunity to create your own Go applications so you can practice what you’re learning.
+
+- title: Functional programming
+  where: skillsmart.ru
+  from: Apr 2022
+  description: Practical course based on the materials of the book "Functional Programming Using F#" by Michael R. Hansen
+
+- title: Declarative programming model
+  where: skillsmart.ru
+  from: Feb 2022
+  description: The next course in the series. Learns to program in a declarative computational model, and to reduce the complexity of a system of any scale to a linear sum of the complexities of its subsystems.
+
+- title: How to understand everything in programming.
+  where: skillsmart.ru
+  from: Feb 2022
+  description: The first, preparatory course from a series of courses on the essence of programming paradigms. The course introduces the scientific view of programming - its fundamental components, and along the way introduces the basics of the multi-paradigm programming language Julia. Based on "Concepts, Techniques, and Models of Computer Programming" by Peter Van Roy and Control Structures for Programming Languages by David A. Fisher
+
+- title: Getting Started with Go
+  where: coursera.org Ian Harris course
+  from: Jan 2022
+  description: Basics of Go language. Topics include data types, protocols, formats, and writing code that incorporates RFCs and JSON.
+
+- title: Practice in programming on ADS, second part.
+  where: skillsmart.ru
+  from: Jan 2022
+  description: Сontinuation of the first course. The topics include trees, tree traversals, binary search trees, balanced binary search trees, heaps, and graphs. The topics cover the definition and implementation of these data structures and algorithms, including operations such as insertion, deletion, and search. Specific topics covered include red-black trees, B-trees, depth-first search, and breadth-first search.
+
+- title: Practice in programming on ADS, first part.
+  where: skillsmart.ru
+  from: Oct 2021
+  description: Based on material from Carnegie Mellon 15-121 and Stanford CS106B. The topics include the analysis of algorithmic complexity, linked lists, variable-size arrays, stacks, queues, hash tables, universal hashing, perfect hashing, associative arrays, sets, caches, and Bloom filters. The topics cover the implementation and analysis of these data structures and algorithms, including their strengths and weaknesses, as well as different methods for dealing with collisions and errors.
+
+- title: DevOps Internship
+  where: slurm.io
+  from: Aug 2021
+  description: 2 months of deep dive into GIT, Docker, Kubernetes and Gitlab CI/CD.
+
+- title: Clear Code
+  where: skillsmart.ru
+  from: Jul 2021
+  description: A course on developing a good coding style, Based on "Code Complete" by Steve McConnell and "Clean Code" by Robert C. Martin
+
+- title: 28 tasks of increasing complexity
+  where: skillsmart.ru
+  from: May 2021
+  description: 28 tasks of increasing complexity in a game format close to real work. Additional practice in passing tests and working with git / github
+
+- title: Fundamentals of OOP, testing, simple technologies
+  where: skillsmart.ru
+  from: Jan 2021
+  description: Funduments of OOP model, and as addition work with files, archives, images, etc.
+
+- title: Programming from scratch
+  where: skillsmart.ru
+  from: Dec 2020
+  description: Practical introduction to programming. Base concepts.

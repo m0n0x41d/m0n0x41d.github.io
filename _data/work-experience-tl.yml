@@ -1,0 +1,25 @@
+- title: DevOps Engineer, at Flant
+  from: Nov 2021
+  to: present
+  description:
+   - Collaborated on the upkeep and support of HA containerized systems.
+   - Utilized Docker, Helm, and Werf in CI/CD pipelines on Gitlab CI or Github Actions to streamline application development and delivery. Including complex workflows, including review environments, canary and multi data center deployments.
+   - Kubernetes (Deckhouse) clusters administration. Monitoring and debbuging cluster components.
+   - Debugging and troubleshooting various custumers applications, resulting in improved application quality and reliability.
+   - Development of k8s informers to automate clients workflows (ReviewReaper as example).
+   - Maintenance and support of Linux server (mainly Ubuntu) infrastructure with different components.
+   - Supported some Nginx configs for routing edits to ensure optimal performance and reliability of critical systems. Also used the Lua programming language to extend the functionality of Nginx (OpenResty).
+   - Utilized AWS to deploy and manage cloud-based infrastructure, including EC2, S3, VPC networking. Also gained some experience with Terraform for infrastructure automation.
+   - Familiar with DNS and CDN configurations on CloudFlare, Azure, and AWS.
+
+- title: Database Administrator, at DataBase Intelligence
+  from: Jun 2020
+  to: Nov 2021
+  description:
+    - Administered and maintained Oracle, PostgreSQL, MongoDB, and MarklogicDB databases, ensuring high availability and performance.
+    - Developed and implemented backup and recovery strategies for critical databases, minimizing data loss in the event of system failures or disasters.
+    - Moderate experience analyzing SQL scripts and optimizing queries to improve database performance and reduce server load.
+    - Automated routine tasks and procedures using Bash scripting, improving operational efficiency and reducing manual errors.
+    - Maintenance and support of Linux server (mainly CentOS and Oracle Linux) infrastructure with DBMS systems.
+    - Utilized AWS to provision, deploy, and manage RDS systems.
+    - Conducted regular performance audits and implemented optimization strategies to improve database response times and overall user experience.

@@ -17,3 +17,7 @@
 - name: PostgreSQL
   percentage: 97
   color: info
+
+- name: Bash Scripting
+  percentage: 75
+  color: warning

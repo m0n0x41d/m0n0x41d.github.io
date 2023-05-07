@@ -1,11 +1,16 @@
 <div class="col mt-4">
+  <h2>Work Experience</h2>
   <div class="timeline-body bg-themed">
-    {% for item in site.data.timeline %}
+    {% for item in site.data.work-experience-tl %}
       <div class="timeline-item">
         <div class="content">
           <h2>{{ item.title }}</h2>
           <h6 class="date">{{ item.from }} — {{ item.to }}</h6>
-          <p>{{ item.description }}</p>
+          <ul class="list-unstyled">
+            {% for p in item.description %}
+            <li class="pb-1">⦁ {{ p }}</li>
+            {% endfor %}
+          </ul>
         </div>
       </div>
     {% endfor %}

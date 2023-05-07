@@ -7,8 +7,17 @@ weight: 3
 
 # **About Me**
 
-Hello there! I am Ivan :wave:<br>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Hello there! I am Ivan :vulcan_salute:<br>
+
+I am a DevOps Engineer with a strong background in database administration. While my practical experience lies mostly in the Ops field, I have dedicated a significant amount of time to learning software development.
+
+Despite my occasional self-doubt in DevOps expertise, I am confident in my ability to expertly handle Kubernetes administration, GitLab CI/CD, and Helm charts composition.
+
+Regarding software development — I'm damn happy with any tasks that require writing code.
+
+So, yeah, I'm passionate about developing complex systems and Kubernetes components, and I'm eager to continue building my experience in these areas, especially in development. I am always interested in expanding my skills and knowledge, and am open to learning about new technologies and developing my expertise in less commonly known areas.
+
+My ultimate long-term career goal is to become a skilled engineer, bringing my unique perspective and diverse skill set to any development team, and moving more towards the Dev field than Ops.
 
 <div class="row">
 {% include about/skills.html title="Dev Skills" source=site.data.dev-skills %}
@@ -16,5 +25,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </div>
 
 <div class="row">
-{% include about/timeline.html %}
+{% include about/work-experience-tl.html %}
+</div>
+
+<div class="row">
+{% include about/taken-courses-tl.html %}
 </div>
