@@ -6,7 +6,7 @@
    - Utilized Docker, Helm, and Werf in CI/CD pipelines on Gitlab CI or Github Actions to streamline application development and delivery. Including complex workflows, including review environments, canary and multi data center deployments.
    - Kubernetes (Deckhouse) clusters administration. Monitoring and debbuging cluster components.
    - Debugging and troubleshooting various custumers applications, resulting in improved application quality and reliability.
-   - Development of k8s informers to automate clients workflows (ReviewReaper as example).
+   - Development of k8s informers to automate clients workflows (<a href="https://github.com/NaNameUz3r/ReviewReaper">Review Reaper</a> as example).
    - Maintenance and support of Linux server (mainly Ubuntu) infrastructure with different components.
    - Supported some Nginx configs for routing edits to ensure optimal performance and reliability of critical systems. Also used the Lua programming language to extend the functionality of Nginx (OpenResty).
    - Utilized AWS to deploy and manage cloud-based infrastructure, including EC2, S3, VPC networking. Also gained some experience with Terraform for infrastructure automation.
