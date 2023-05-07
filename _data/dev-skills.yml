@@ -7,7 +7,7 @@
   color: secondary
 
 - name: git
-  percentage: 60
+  percentage: 89
   color: success
 
 - name: OOP
