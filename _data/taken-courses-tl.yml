@@ -1,13 +1,28 @@
 
+- title: Clear Legacy
+  where: skillsmart.ru
+  from: Aug 2023
+  description: How to understand legacy projects and make changes to them without breaking things. Techniques for right way to thinking of refactoring, testing and modernizing old codebases.
+
+- title: OOAP At practice
+  where: skillsmart.ru
+  from: Jun 2023
+  description: High Level Design. Choose any topic and create a project, focusing on designing a class system, following the proposed methodology step by step.
+
+- title: Fast dive in OOP
+  where: skillsmart.ru
+  from: May 2023
+  description: Based on "Object Calisthenics" by Jeff Bay and its discussions.
+
 - title: How to develop and design systems of any complexity using OOP, 2nd OOAD course.
   where: skillsmart.ru
-  from: Apr 2022
-  description: The course explores a deep understanding of the principles of object-oriented development and OO design, including SOLID, applicable to the creation of systems of any complexity, got acquainted with inheritance, composition, dynamic binding and polymorphism in the context of programming in large.
+  from: Apr 2023
+  description: The course explores a deep understanding of the principles of object-oriented development and OO low-level design, including SOLID, applicable to the creation of systems of any complexity, got acquainted with inheritance, composition, dynamic binding and polymorphism in the context of programming in large.
 
 - title: How to properly design classes based on abstract data types, 1st OOAD course
   where: skillsmart.ru
   from: Dec 2022
-  description: The course studies the design of OOP class structures.
+  description: The course studies the low-level design of OOP class structures.
 
 - title: Practice in programming on ADS, first part.
   where: skillsmart.ru

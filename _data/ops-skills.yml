@@ -6,7 +6,7 @@
   percentage: 86
   color: danger
 
-- name: Helm
+- name: Helm/Werf
   percentage: 90
   color: warning
 
@@ -19,5 +19,5 @@
   color: info
 
 - name: Bash Scripting
-  percentage: 75
+  percentage: 81
   color: warning

@@ -1,6 +1,13 @@
+
+- title: Python Backend Engineer, at Monite
+  from: Aug 2023
+  to: present
+  description:
+   - Developlment of backend platform services.
+
 - title: DevOps Engineer, at Flant
   from: Nov 2021
-  to: present
+  to: Aug 2023
   description:
    - Collaborated on the upkeep and support of HA containerized systems.
    - Utilized Docker, Helm, and Werf in CI/CD pipelines on Gitlab CI or Github Actions to streamline application development and delivery. Including complex workflows, including review environments, canary and multi data center deployments.

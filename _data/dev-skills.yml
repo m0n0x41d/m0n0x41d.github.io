@@ -3,7 +3,7 @@
   color: info
 
 - name: Python
-  percentage: 53
+  percentage: 75
   color: secondary
 
 - name: git
@@ -11,7 +11,7 @@
   color: success
 
 - name: OOP
-  percentage: 48
+  percentage: 60
   color:
 
 - name: Algorithms and data structures
@@ -19,9 +19,9 @@
   color: danger
 
 - name: Functional programming
-  percentage: 30
+  percentage: 35
   color: info
 
 - name: "ChatGPT Prompting :trollface:"
-  percentage: 68
+  percentage: 71
   color:
