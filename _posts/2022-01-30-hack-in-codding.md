@@ -1,5 +1,5 @@
 ---
-title: Hack in Codding
+title: Hack in Fundamentals
 tags: [Programming, Computer Science]
 style: border
 color: primary
