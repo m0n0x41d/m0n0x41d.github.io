@@ -195,3 +195,9 @@ I wanted to touch on the topic of "hardware" parallelism because it is part of o
 I hope this post was informative, even though it may look and feel like a salad of concepts – it's not :)
 
 All the best!
+
+
+{:refdef: style="text-align: center;"}
+![Взрыв Мозга](/assets/images/mind_blowing.gif)
+{: refdef}
+*<center>what the hell did i just read</center>*
