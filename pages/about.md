@@ -30,6 +30,6 @@ My goal is to collaborate with a development team and continue learning and cont
 {% include about/work-experience-tl.html %}
 </div>
 
-<div class="row">
+<!-- <div class="row">
 {% include about/taken-courses-tl.html %}
-</div>
+</div> -->
