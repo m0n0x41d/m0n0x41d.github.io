@@ -8,7 +8,7 @@ behance:
 
 telegram:
   url   : https://t.me/
-  icon  : fa-brands fa-telegram
+  icon  : fab fa-telegram
   color : 0088cc
 
 dribbble:
