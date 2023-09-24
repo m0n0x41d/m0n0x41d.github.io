@@ -1,6 +1,6 @@
 ### Site Settings ###
 title               : wannahack.in
-description         : ""
+description         : "qqq adfsdaf"
 baseurl             : ""                                  # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : NaNameUz3r/NaNameUz3r.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 open_new_tab        : false                             # Opens external URLs in new tab (works for posts, projects and navbar only)
@@ -16,6 +16,7 @@ nav_exclude:                                            # The following paths ar
   - pages/tags.html
   - pages/404.html
   - pages/index.md
+  - pages/projects.html
 
 
 ### Author Info ###
@@ -30,6 +31,7 @@ author:
 # gitlab            : your_username
 # instagram         : your_username
 # kaggle            : your_username
+  telegram          : wannahackin
   linkedin          : ivan-zakutnii-a43851203
 # medium            : your_username
 # soundcloud        : your_username

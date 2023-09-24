@@ -6,6 +6,11 @@ behance:
   icon  : fab fa-behance
   color : 1769ff
 
+telegram:
+  url   : https://t.me/
+  icon  : fa-brands fa-telegram
+  color : 0088cc
+
 dribbble:
   url   : https://dribbble.com/
   icon  : fab fa-dribbble
@@ -35,7 +40,7 @@ instagram:
   url   : https://www.instagram.com/
   icon  : fab fa-instagram
   color : 405de6
-  
+
 kaggle:
   url   : https://www.kaggle.com/
   icon  : fab fa-kaggle
