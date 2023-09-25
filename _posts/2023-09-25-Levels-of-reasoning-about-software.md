@@ -3,7 +3,7 @@ title: Levels of reasoning about software
 tags: [Software Design, Computer Science]
 style: border
 color: secondary
-description: No description for this, read the post!
+description: Tough staff, or – how to think about software systems.
 ---
 
 # What is erroneous program?

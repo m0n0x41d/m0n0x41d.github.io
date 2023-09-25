@@ -3,7 +3,7 @@ title: Bullshit of self-documenting code
 tags: [Software Design,  Thoughts]
 style: border
 color: warning
-description: No description for this, read the post!
+description: They are smart, but even smart people still people...
 ---
 
 Oh, hello there!
