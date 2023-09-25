@@ -6,7 +6,7 @@ color: primary
 description: Scientific look at programming. Concurrency, atomicity and something else.
 ---
 
-Now I am taking a course by Sergey Bobrovsky, which is called "How to Understand Everything in Programming." In reality, this is a series of courses aimed at mastering a scientific, or better to say, an engineering approach to programming, from fundamental concepts to understanding programming paradigms.
+Now I am taking a course which is called "How to Understand Everything in Programming." In reality, this is a series of courses aimed at mastering a scientific, or better to say, an engineering approach to programming, from fundamental concepts to understanding programming paradigms.
 
 This post serves as a kind of report on the material covered. I want to focus on the topic of parallel programming and atomicity - I got stuck on the test on this topic :), and I hope that together we will figure it out.
 
