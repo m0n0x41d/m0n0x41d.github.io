@@ -13,7 +13,7 @@ I've worked on Kubernetes administration, GitLab CI/CD, and Helm charts composit
 I enjoy coding and solving complex challenges.
 My goal is to collaborate with a development team and continue learning and contributing in this area.
 
-<div class="row justify-content-left align-items-left p-4">
+<div class="row justify-content-left align-items-left pt-2">
     <div class="col-md-10 text-left">
     <div class="mt-0">
       <a href="/assets/Ivan_Zakutnii_CV.pdf" download="Ivan_Zakutnii_CV.pdf"><button type="button" class="btn align-items-center btn-primary mr-1">Download CV</button></a>
