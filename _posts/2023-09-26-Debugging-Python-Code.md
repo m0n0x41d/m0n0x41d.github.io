@@ -7,7 +7,7 @@ description: The orthodox way to do it.
 ---
 
 
-Oh, hello there!
+Oh, hello there!!!
 
 Today, I'd like to talk about debugging in a more practical context. Please take a look at this article about the [3 levels of reasoning about software systems](/blog//Levels-of-reasoning-about-software).
 
