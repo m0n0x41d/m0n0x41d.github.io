@@ -1,6 +1,6 @@
 ---
 title: Debugging Python Code
-tags: [Programming, Tools]
+tags: [Programming, Tools, Python]
 style: border
 color: warning
 description: The orthodox way to do it.
