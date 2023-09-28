@@ -20,7 +20,7 @@ With immutable data structures, we can always be sure that they remain the same,
 Therefore, Functional Programming minimizes the use of states and instead relies on "pure functions." 
 These functions take some input, process it, and return a new "immutable state."
 
-### Predictability Matters
+## Predictability Matters
 
 This approach is as clear as day. Such a flow makes our reasoning about the system much easier because we can easily identify the parts of the code where "state" can mutate into something different. In imperative programming with mutable states, such reasoning can be much more challenging because state changes can happen virtually anywhere.
 
