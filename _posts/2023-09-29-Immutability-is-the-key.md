@@ -2,7 +2,7 @@
 title: Immutability is the key
 tags: [Functional Programming]
 style: border
-color: dark
+color: success
 description: Few words about this simple and elegant thing.
 ---
 
