@@ -3,10 +3,10 @@ title: Immutability is the key
 tags: [Functional Programming]
 style: border
 color: success
-description: Few words about this simple and elegant thing.
+description: Few words about Immutability
 ---
 
-Immutable States
+## Immutable States
 
 State is one of the fundamental concepts in programming. We might say that state is the possibility of modifying some data at any given moment. However, a more accurate definition is:
 
