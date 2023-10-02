@@ -46,7 +46,7 @@ Asyncio is a Python "framework". Unlike threads, it operates in a single-threade
    - **Parallel Execution:** Python threads provide a way to achieve parallelism on multi-core systems. Multiple threads can run in parallel, making use of multiple CPU cores.
    - **Global Interpreter Lock (GIL):** Python's Global Interpreter Lock allows only one thread to execute in the interpreter at a time, limiting true parallelism in CPU-bound tasks.
 
-   ```python
+    ```python
    import threading
 
    def task():
@@ -100,85 +100,85 @@ You got to be sure that libraries you use are supports asyncio, if you want to u
 
 Take a look at this bunch of code:
 
-    ```python
-    import requests
-    import time
+```python
+import requests
+import time
 
 
-    def fetch_url(url):
-        response = requests.get(url)
-        content_length = len(response.text)
-        return url, content_length
+def fetch_url(url):
+    response = requests.get(url)
+    content_length = len(response.text)
+    return url, content_length
 
 
-    def main():
-        urls = [
-            "https://wannahack.in",
-            "https://docs.python.org/3/library/asyncio.html",
-            "https://www.google.com",
-        ]
+def main():
+    urls = [
+        "https://wannahack.in",
+        "https://docs.python.org/3/library/asyncio.html",
+        "https://www.google.com",
+    ]
 
-        results = [fetch_url(url) for url in urls]
+    results = [fetch_url(url) for url in urls]
 
-        for url, length in results:
-            print(f"Content from {url} has length: {length}")
-
-
-    if __name__ == "__main__":
-        start = time.time()
-        main()
-        total_duration = time.time() - start
-        print(f"Total duration: {total_duration}")
+    for url, length in results:
+        print(f"Content from {url} has length: {length}")
 
 
-    > Content from https://wannahack.in has length: 7699
-    > Content from https://docs.python.org/3/library/asyncio.html has length: 20875
-    > Content from https://www.google.com has length: 19252
-    > Total duration: 1.5766408443450928
-    ```
+if __name__ == "__main__":
+    start = time.time()
+    main()
+    total_duration = time.time() - start
+    print(f"Total duration: {total_duration}")
+
+
+> Content from https://wannahack.in has length: 7699
+> Content from https://docs.python.org/3/library/asyncio.html has length: 20875
+> Content from https://www.google.com has length: 19252
+> Total duration: 1.5766408443450928
+```
 
 We just fetching sites and measure total execution time of the script.
 
 Now lets do same thing, but using asyncio concurrency.
 
-    ```python
-    import asyncio
-    import aiohttp
-    import time
+```python
+import asyncio
+import aiohttp
+import time
 
 
-    async def fetch_url(url):
-        async with aiohttp.ClientSession() as session:
-            async with session.get(url) as response:
-                content = await response.text()
-                return url, len(content)
+async def fetch_url(url):
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            content = await response.text()
+            return url, len(content)
 
 
-    async def main():
-        urls = [
-            "https://wannahack.in",
-            "https://docs.python.org/3/library/asyncio.html",
-            "https://www.google.com",
-        ]
+async def main():
+    urls = [
+        "https://wannahack.in",
+        "https://docs.python.org/3/library/asyncio.html",
+        "https://www.google.com",
+    ]
 
-        tasks = [fetch_url(url) for url in urls]
-        results = await asyncio.gather(*tasks)
+    tasks = [fetch_url(url) for url in urls]
+    results = await asyncio.gather(*tasks)
 
-        for url, length in results:
-            print(f"Content from {url} has length: {length}")
+    for url, length in results:
+        print(f"Content from {url} has length: {length}")
 
 
-    if __name__ == "__main__":
-        start = time.time()
-        asyncio.run(main())
-        total_duration = time.time() - start
-        print(f"Total duration: {total_duration}")
+if __name__ == "__main__":
+    start = time.time()
+    asyncio.run(main())
+    total_duration = time.time() - start
+    print(f"Total duration: {total_duration}")
 
-    > Content from https://wannahack.in has length: 7699
-    > Content from https://docs.python.org/3/library/asyncio.html has length: 20864
-    > Content from https://www.google.com has length: 19190
-    > Total duration: 0.5765419006347656
-    ```
+> Content from https://wannahack.in has length: 7699
+> Content from https://docs.python.org/3/library/asyncio.html has length: 20864
+> Content from https://www.google.com has length: 19190
+> Total duration: 0.5765419006347656
+```
 
 Look how faster is it!
 In last example, the fetch_url function is an asynchronous function that fetches data from a given URL using aiohttp.
