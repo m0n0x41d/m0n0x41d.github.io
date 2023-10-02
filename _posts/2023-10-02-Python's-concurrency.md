@@ -186,6 +186,7 @@ The main function creates a list of URLs and creates tasks to fetch data from ea
 
 ---
 
-As a reminder, if you are going to code some concurrent code, you probably should know benefits of [immutablity](blog/Immutability-is-the-key).
+As a reminder, if you are going to code some concurrent code, you probably should know benefits of [immutablity](/blog/Immutability-is-the-key).
+
 
 Se you!
