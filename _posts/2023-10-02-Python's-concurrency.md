@@ -19,7 +19,7 @@ There is a good looking [infographic](https://colin-scott.github.io/personal_web
 
 Python (CPython and PyPy) has a thing called GIL, it is, actually thred-lock/mutex, which ensures that only one thread controls python interpreter at a time.
 
-> Other python implementations like Jython, IronPython, PyPy, etc, don’t have GIL. And treat threds differently.
+> Other python implementations like Jython, IronPython, etc, don’t have GIL. And treat threds differently.
 
 Thus, it limits the multi-thread execution “inside” Python, allowing only one thread to run at a time in a single Python process. This is a saviour from the race conditions with memory allocations, but con is that two threds can't use same core simultaneously.
 
