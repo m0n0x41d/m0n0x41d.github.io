@@ -102,6 +102,7 @@ You got to be sure that libraries you use are supports asyncio, if you want to u
 
 Take a look at this bunch of code:
 
+    ```python
     import requests
     import time
 
@@ -136,11 +137,13 @@ Take a look at this bunch of code:
     > Content from https://docs.python.org/3/library/asyncio.html has length: 20875
     > Content from https://www.google.com has length: 19252
     > Total duration: 1.5766408443450928
+    ```
 
 We just fetching sites and measure total execution time of the script.
 
 Now lets do same thing, but using asyncio concurrency.
 
+    ```python
     import asyncio
     import aiohttp
     import time
@@ -177,6 +180,7 @@ Now lets do same thing, but using asyncio concurrency.
     > Content from https://docs.python.org/3/library/asyncio.html has length: 20864
     > Content from https://www.google.com has length: 19190
     > Total duration: 0.5765419006347656
+    ```
 
 Look how faster is it!
 In last example, the fetch_url function is an asynchronous function that fetches data from a given URL using aiohttp.
