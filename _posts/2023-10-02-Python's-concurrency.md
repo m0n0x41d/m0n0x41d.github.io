@@ -29,11 +29,11 @@ Thus, it limits the multi-thread execution “inside” Python, allowing only on
 
 The basic approach to move around the GIL is to use sup interpreters using things like [multiprocessing](https://docs.python.org/3.10.2/library/multiprocessing.html) module. But we won't go into that today.
 
-There is also a long discussion about exposing sub interpreters (https://peps.python.org/pep-0554/) in Python stdlib, to use them with own GIL’s, but is still not applied completely.
+There is also a long [discussion](https://peps.python.org/pep-0554/) about exposing sub interpreters in Python stdlib, to use multiprocesses with own GIL’s, but is still not applied completely.
 
 # How to make a python program concurrent?
 
-There are two ways to make a python program concurrent: *threads* and *asyncio*ß, and they are work in different way.
+There are two ways to make a python program concurrent: *threads* and *asyncio*, and they are work in different way.
 
 Thread, basically, is each independent parallel activity in some software system.
 Threads run independently but share a common memory space.
@@ -46,7 +46,6 @@ Asyncio is a Python "framework". Unlike threads, it operates in a single-threade
    - **Parallel Execution:** Python threads provide a way to achieve parallelism on multi-core systems. Multiple threads can run in parallel, making use of multiple CPU cores.
    - **Global Interpreter Lock (GIL):** Python's Global Interpreter Lock allows only one thread to execute in the interpreter at a time, limiting true parallelism in CPU-bound tasks.
 
-   **Example:**
    ```python
    import threading
 
@@ -64,7 +63,6 @@ Easier to say – this is cuncurrency, managed by OS.
    - **Single-threaded:** Asyncio operates in a single-threaded event loop. It doesn't create multiple threads for parallel execution. Instead, it switches between tasks during I/O operations, making efficient use of a single thread.
    - **Coroutines:** Asyncio uses coroutines, which are special types of functions that can be paused and resumed. This allows for a more sequential style of code even though the tasks are asynchronous.
 
-   **Example:**
    ```python
    import asyncio
 
