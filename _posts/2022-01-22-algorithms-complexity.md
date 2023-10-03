@@ -1,5 +1,5 @@
 ---
-title: Algorithms complexity
+title: Algorithms Complexity
 tags: [Algorithms, Computer Science]
 style: border
 color: primary

@@ -1,5 +1,5 @@
 ---
-title: Levels of reasoning about software
+title: Levels Of Reasoning About Software
 tags: [Software Design, Computer Science]
 style: border
 color: secondary

@@ -1,5 +1,5 @@
 ---
-title: Bullshit of self-documenting code
+title: Bullshit Of Self-Documenting Code
 tags: [Software Design,  Thoughts]
 style: border
 color: warning

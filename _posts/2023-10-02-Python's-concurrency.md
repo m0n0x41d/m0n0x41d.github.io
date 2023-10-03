@@ -1,5 +1,5 @@
 ---
-title: Python's concurrency
+title: Python's Concurrency
 tags: [Programming, Python]
 style: border
 color: light
