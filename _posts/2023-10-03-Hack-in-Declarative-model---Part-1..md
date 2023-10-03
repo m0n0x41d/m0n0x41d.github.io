@@ -1,5 +1,5 @@
 ---
-title: Hack in Declarative model - Part 1.
+title: Hack in Declarative model - Part 1
 tags: [Computer Science, Declarative Model]
 style: border
 color: danger
