@@ -7,11 +7,13 @@ weight: 3
 
 # **About Me**
 
-I'm a Python Backend Engineer with experience in database administration and DevOps.
-I've worked on Kubernetes administration, GitLab CI/CD, and Helm charts composition.
+Greetings! I'm Ivan, a dedicated Backend Engineer well-versed in database administration and DevOps practices. My expertise includes hands-on experience in Kubernetes administration, GitLab CI/CD implementations, and crafting Helm charts for seamless deployments, among other skills.
 
-I enjoy coding and solving complex challenges.
-My goal is to collaborate with a development team and continue learning and contributing in this area.
+I find immense joy in coding and tackling intricate problems. My passion lies in solving complex challenges, where creativity meets technical proficiency.
+
+My ultimate goal is to gain and share enlightenment in the fundamental principles of computer science, software, and system designs. I am enthusiastic about contributing my skills and knowledge to the field, aiming to make a meaningful impact. Join me on this exciting journey as we explore the endless possibilities of software engineering together!
+
+
 
 <div class="row justify-content-left align-items-left pt-2">
     <div class="col-md-10 text-left">
