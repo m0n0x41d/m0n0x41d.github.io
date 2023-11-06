@@ -162,7 +162,9 @@ When you're ready, commit all your changes and push your repo on GitHub.
 
 Once you've pushed your repository to GitHub, everything should work seamlessly. By default, GitHub Pages serves the `main` branch from your `<username>.github.io` repository under the same pattern domain (e.g., `<username>.github.io`).
 
-To confirm that everything is functioning properly, check the domain after pushing (you might need to wait for 5-10 minutes, but usually, it deploys faster). The best way to verify the status of your page is through the settings. Navigate to your repo page and click on settings:
+To confirm that everything is functioning properly, check the domain after pushing (you might need to wait for 5-10 minutes, but usually, it deploys faster). GitHub Pages will always look for pushes on configured branch and redeploy Jekyll.
+
+The best way to verify the status of your page is through the settings. Navigate to your repo page and click on settings:
 
 {:refdef: style="text-align: center;"}
 ![Repo settings](/assets/images/repo_settings.png)
