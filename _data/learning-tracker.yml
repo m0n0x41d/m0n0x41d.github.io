@@ -1,13 +1,22 @@
+- title: Diving Deeper in Functional Programming Concepts
+  where: skillsmart.ru
+  from: Oct 2023
+  description: An in-depth course on all the basic principles of functional programming.
+
+- title: Clear Architecture
+  where: skillsmart.ru
+  from: Sep 2023
+  description: Quick and practical start in all major programming styles and architectures.
 
 - title: Clear Legacy
   where: skillsmart.ru
   from: Aug 2023
-  description: How to understand legacy projects and make changes to them without breaking things. Techniques for right way to thinking of refactoring, testing and modernizing old codebases.
+  description: Learning the way to understanding legacy projects and make changes to them without breaking things. Techniques for right way to thinking of refactoring, testing and modernizing old codebases.
 
 - title: OOAP At practice
   where: skillsmart.ru
   from: Jun 2023
-  description: High Level Design. Choose any topic and create a project, focusing on designing a class system, following the proposed methodology step by step.
+  description: High Level Design. Practice in designing software project with focusing on a class system, following the proposed methodology step by step.
 
 - title: Fast dive in OOP
   where: skillsmart.ru
@@ -27,7 +36,7 @@
 - title: Practice in programming on ADS, first part.
   where: skillsmart.ru
   from: Jul 2022
-  description: Second take of this course, but no in Go language.
+  description: Second take of this course, but now in Go language.
 
 - title: Object-oriented programming model
   where: skillsmart.ru
@@ -84,7 +93,7 @@
   from: Jul 2021
   description: A course on developing a good coding style, Based on "Code Complete" by Steve McConnell and "Clean Code" by Robert C. Martin
 
-- title: 28 tasks of increasing complexity
+- title: 28 tasks of increasing complexity (LeetCode)
   where: skillsmart.ru
   from: May 2021
   description: 28 tasks of increasing complexity in a game format close to real work. Additional practice in passing tests and working with git / github
@@ -92,7 +101,7 @@
 - title: Fundamentals of OOP, testing, simple technologies
   where: skillsmart.ru
   from: Jan 2021
-  description: Funduments of OOP model, and as addition work with files, archives, images, etc.
+  description: Quick dive in OOP model, and as addition work with files, archives, images, etc. Basic staff.
 
 - title: Programming from scratch
   where: skillsmart.ru

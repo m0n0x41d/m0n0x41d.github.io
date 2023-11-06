@@ -1,0 +1,32 @@
+
+- title: Go Systems Programming
+  author: Mihalis Tsoukalos
+  finished: Aug 2023
+  feedback: Never regret choosing this book as one of the materials to master the Go programming language. It provides nice code examples, good explanations, and a few handy tricks. A valuable resource
+
+- title: Structured programming
+  author: O.J. Dahl, E.W. Dijkstra and C.A.R. Hoare
+  finished: Apr 2023
+  feedback: A cornerstone in programming literature, offering profound insights and timeless principles, this book is essential reading for programmers seeking a deeper understanding of structured, efficient code design. It feels like this book should be reread from time to time
+
+- title: Thinking Forth
+  author: Leo Brodie
+  finished: Jan 2023
+  feedback: Timeless wisdom, endless inspiration. A must-read classic for every programmer. There is just nothing more to say.
+
+- title: Grokking Algorithms
+  author: Aditya Bhargava
+  finished: Dec 2022
+  feedback: It is hard to find a more expressive and clear explanation of algorithm complexity and main algorithms, both for newcomers and for experienced individuals looking to recall some concepts. Don't hesitate, especially if you love cute drawings.
+
+
+- title: Kubernetes in Action
+  author: Marko Luksa
+  finished: Nov 2022
+  feedback: Regardless of when this book was written, Mark Luksa is one of the men who was involved in the birth of Kubernetes. If you want to gain a good understanding of how Kubernetes works and what you can achieve with this technology, try taking a look at this book
+
+
+- title: Clear Code
+  author: Uncle Bob
+  finished: Sep 2021
+  feedback: You've heard of Uncle Bob, haven't you? If not, you should fix that ASAP. This book can transform the nightmares people have while reviewing your code into sweet dreams. And remember, one of those people could be you, just two weeks after coding.
