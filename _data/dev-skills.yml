@@ -1,9 +1,9 @@
 - name: "Go"
-  percentage: 70
+  percentage: 54
   color: info
 
 - name: Python
-  percentage: 75
+  percentage: 81
   color: secondary
 
 - name: git
@@ -19,7 +19,7 @@
   color: danger
 
 - name: Functional programming
-  percentage: 35
+  percentage: 47
   color: info
 
 - name: "ChatGPT Prompting :trollface:"
