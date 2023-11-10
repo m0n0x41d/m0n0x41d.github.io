@@ -3,7 +3,7 @@ title: So what is Design Patterns?
 tags: [Software Design]
 style: border
 color: info
-description: No description for this, read the post!
+description: Let's talk about design patterns and the reasons for their existence.
 ---
 
 ## So what is Design Patterns?
