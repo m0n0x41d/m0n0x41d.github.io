@@ -3,7 +3,7 @@ title: General Techniques for Documenting Systems
 tags: [Software Design]
 style: border
 color: primary
-description: No description for this, read the post!
+description: A look at the practices we have in software engineering that help express and understand the system arch.
 ---
 
 Hello, friends. I've written about levels of reasoning about software systems several times before in blog posts. For example, you can find one of my discussions [here](/blog/Levels-of-reasoning-about-software). The conclusion drawn was that the most challenging and valuable layer of reasoning is the third layer - Specification.
