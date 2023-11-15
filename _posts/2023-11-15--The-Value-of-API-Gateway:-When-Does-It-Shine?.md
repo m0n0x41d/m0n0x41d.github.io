@@ -187,7 +187,7 @@ I have already mentioned, but it needs to be repeated – Implementations of API
 
 ---
 
-If you are intereset in system design and architecture, I would recommend to take a look on these resources:
+If you are interested in system design and architecture, I would recommend taking a look at these resources:
 
 - [karanpratapsingh/system-design](https://github.com/karanpratapsingh/system-design#rest-graphql-grpc)
 - [donnemartin/system-design-primer](https://github.com/donnemartin/system-design-primer)
