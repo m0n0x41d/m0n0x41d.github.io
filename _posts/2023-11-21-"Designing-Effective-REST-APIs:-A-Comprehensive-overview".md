@@ -260,8 +260,3 @@ Usually, all implementations of these approaches are project-related and proprie
 # Conclusion
 
 A well-designed API definitely requires an API-first approach with clear objectives and strict formal specifications. Security measures, documentation, and versioning strategies are crucial components for creating sustainable, maintainable, and easy-to-evolve REST APIs with continuous improvement in API design.
-
-
----
-
-Cover Photo by [Quang Nguyen Vinh from Pexels](https://www.pexels.com/photo/building-canes-2138126/).
