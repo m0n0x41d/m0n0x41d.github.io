@@ -185,4 +185,4 @@ Take care, everyone!
 
 ---
 
-[Next post of the series.](https://wannahack.in/blog/Hack-in-Declarative-model-Part-2)
+[Next post of the series.](https://wannahack.in/blog/Hack-in-Declarative-Model-Part-2)
