@@ -182,3 +182,7 @@ In the declarative model, linguistic abstraction of a function, as you might gue
 That's all for today. As you can see, the declarative model is truly the "head" of programming. Stay tuned, we are only just beginning to talk about it!
 
 Take care, everyone!
+
+---
+
+[Next post of the series.](https://wannahack.in/blog/Hack-in-Declarative-model-Part-2)
