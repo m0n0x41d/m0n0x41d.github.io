@@ -50,7 +50,7 @@ A good mantra:
 
 > "I make as many components of the system declarative as possible."
 
-They say that if you repeat it every time you sit down to program and apply it in practice, you will become a good engineer.
+They say that if you repeat it every time you sit down to code and apply it in practice, you will become a good engineer.
 
 ## Recursion
 
