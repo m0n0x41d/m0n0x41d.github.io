@@ -160,6 +160,6 @@ Or is it out there already, at least for FastAPI?
 
 ---
 
-The main source of inspiration for this post is the documentation of the incredible open-source project for FastAPI-based APIs versioning named - [Cadwyn](https://docs.cadwyn.dev/). It was born recently, but it is ready to use, not fearing to say - production-ready (maybe with some minor reservations).
+The main source of inspiration for this post is the documentation of the incredible open-source project for FastAPI-based APIs versioning named - [Cadwyn](https://docs.cadwyn.dev/). It was born recently, but it is ready to use, not fearing to say - production-ready.
 
 Many thanks to [Stanislav Zmiev](https://github.com/zmievsa), the creator, and maintainer of Cadwyn, for consulting and guiding on the challenging topic of API Versioning.
