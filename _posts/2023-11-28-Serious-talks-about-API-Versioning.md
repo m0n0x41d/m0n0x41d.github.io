@@ -32,7 +32,6 @@ Making some breaking changes in our API is simply inevitable. It is a matter of 
 ![Sound of inevitability](/assets/images/inevitability.gif)
 {: refdef}
 
-## How to version APIs?
 ## How to Version APIs?
 
 In the previous post, we briefly covered the main versioning approaches from the "interface side" and the software architectural side.
