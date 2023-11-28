@@ -50,7 +50,7 @@ It is an easy, straightforward way of deciding where to route client requests. J
 
 **Set version in the custom header or query parameters**:
 
-It is as simple as it sounds – we are kindly ~~*forcing*~~ ask our users to include a specific header, for example, `X-API-VERSION`, in every request they make to our API. Or a query parameter. The content of such a header could be anything, usually, it is a datestamp or a version number.
+It is as simple as it sounds – we kindly ~~*forcing*~~ ask our users to include a specific header, for example, `X-API-VERSION`, in every request they make to our API. The same might be achieved with a query parameter. The content of such a header/parameter could be anything; usually, it is a date stamp or a version number.
 
 **Versioned Media Types**:
 
@@ -94,7 +94,7 @@ The most interesting thought here is that with such fundamental versioning, if w
 
 ## Unified router, passing requests to versioned controllers
 
-If we make the good decision not to version data, so our model layer will stay the same across versions. We might reuse its code between versions and version *controllers*, introducing different business logic in new versions (we may also version representation here if needed, and we will most likely **need**).
+If we make the good decision not to version data, so our model layer will stay the same across versions, we might reuse its code between versions and version *controllers*, introducing different business logic in new versions (we may also version representation here if needed, and we will most likely **need**).
 
 Yet, the unchanged parts of logic in upcoming versions ("in-use" parts) still should be duplicated because we just can't throw out things needed by clients. Even when migrating to the new versions, they should have a consistent experience with a supported feature-set.
 
@@ -104,7 +104,7 @@ Even if this way of versioning might look more reliable and better than the firs
 
 The more versions we are supporting in such a manner, the more complex and more easily to break such a system becomes.
 
-Almost every change in one versions will require some refactoring or even crutch in previous versions. This might be a big, because we are not able to quiqly release new feature without fear of breaking something. 100% test coverage will might help here, but nothing will help maintainers of such versionig to be young and fresh looking again.
+Almost every change in one versions will require some refactoring or even crutch in previous versions. This might be a big, because we are not able to quickly release new feature without fear of breaking something. 100% test coverage will might help here, but nothing will help maintainers of such versioning to be young and fresh looking again.
 
 I am joking. Am I?..
 
