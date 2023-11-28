@@ -26,7 +26,7 @@ So, we are talking about serious APIs here. Right after such API is deployed and
 
 Making some breaking changes in our API is simply inevitable. It is a matter of time and a matter of money that's at stake.
 
-> API Versioning is invetable.
+> API Versioning is inevitable.
 
 {:refdef: style="text-align: center;"}
 ![Sound of inevitability](/assets/images/inevitability.gif)
