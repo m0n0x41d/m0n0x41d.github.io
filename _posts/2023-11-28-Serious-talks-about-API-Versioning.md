@@ -104,7 +104,7 @@ Even if this way of versioning might look more reliable and better than the firs
 
 The more versions we are supporting in such a manner, the more complex and more easily to break such a system becomes.
 
-Almost every change in one versions will require some refactoring or even crutch in previous versions. This might be a big, because we are not able to quickly release new feature without fear of breaking something. 100% test coverage will might help here, but nothing will help maintainers of such versioning to be young and fresh looking again.
+Almost every change in one version will require some refactoring or even a crutch in previous versions. This might be a big issue because we are not able to quickly release new features without the fear of breaking something. 100% test coverage might help here, but nothing will help maintainers of such versioning to stay young and fresh-looking again.
 
 I am joking. Am I?..
 
