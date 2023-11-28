@@ -72,13 +72,15 @@ The Model-View-Controller (MVC) pattern is a software architectural design appro
 
 This pattern is quite a mainstream way in web development (and related fields) of designing user interfaces and providing a systematic way to organize code, enhance modularity, and promote maintainability (at least this is the idea).
 
-*Usually*, in the MVC pattern, the Model represents the application's data and business logic. It encapsulates the core functionality and is responsible for *managing data*, processing user inputs, and responding to requests from the View or Controller.
+*Usually*, in the MVC pattern, the **Model** represents the application's data and business logic. It encapsulates the core functionality and is responsible for *managing data*, processing user inputs, and responding to requests from the View or Controller.
 
-The View is responsible for representing the data to the user and describing the user interface. It remains independent of the application's logic and communicates with the Model to retrieve data for this representation.
+The **View** is responsible for representing the data to the user and describing the user interface. It remains independent of the application's logic and communicates with the Model to retrieve data for this representation.
 
-The Controller is the "thing" that acts as the mediator, ruling between the Model and the View. The Controller receives input data from the View; then, some middleware processing (logic of "converting" requests) happens, and requests are passed to the Model. Responses from the Model are then sent back to the View via the Controller. The model state can be altered here, reflecting the context of the ongoing processing, or not, if it is just a regular reading operation.
+The **Controller** is the "thing" that acts as the mediator, ruling between the Model and the View. The Controller receives input data from the View; then, some middleware processing (logic of "converting" requests) happens, and requests are passed to the Model.
 
-It's easy to say that the *updated Model triggers changes in the View via Controller*.
+Responses from the Model are then sent back to the View via the Controller. The model state can be altered here, reflecting the context of the ongoing processing, or not, if it is just a regular reading operation.
+
+It's much easier to say that the *updated Model triggers changes in the View via Controller*.
 
 By separating system parts in such a manner, the MVC pattern enhances code organization, making it easier to understand, modify, and maintain. It also might improve collaboration flow among developers because, *ideally*, each component can be developed independently, promoting a more modular and scalable architecture.
 
@@ -88,7 +90,9 @@ In practice, logic parts might be shifted across the components; for example, th
 
 This is the easiest way from the point of effort, but it requires a lot of duplications in the codebase. It is as simple as a *phonk*; we are just copying code as a new version, making all the changes we need, and proxying requests, using one of the methods mentioned earlier, like a custom header, for example.
 
-It might be really funky to feel free and able to start every next version "from a clean page," changing not only the code but even the architecture however we want. But... we will need to support and maintain every copy of the code, and we might even have to pay for every version's infrastructure if versions are deployed separately. I hope that all teams who choice this way of versioning are supporting only few versions.
+It might be really funky to feel free and able to start every next version "from a clean page," changing not only the code but even the architecture however we want.
+
+But... we will need to support and maintain every copy of the code, and we might even have to pay for every version's infrastructure if versions are deployed separately. I hope that all teams who choice this way of versioning are supporting only few versions.
 
 The most interesting thought here is that with such fundamental versioning, if we are changing architecture or data model, we are already versioning not just the API but our app overall.
 
@@ -116,7 +120,7 @@ Data model and controllers *mostly* remain the same across all versions; here, w
 
 Basically, this is the only way to support a huge number of versions. It will work fine with 5, 10, 20 (???) versions, while the first and second approaches will become a nightmare right after 2-4 versions.
 
-It is a tricky thing to implement, and every company choosing this approach implements it in their own way. But in abstract, views versioning is achieved by implementing an **additional layer**, which is responsible for *building* appropriate responses for the "requested versions" from the API data. It is additional layer, because business logic remains too, remember?
+It is a tricky thing to implement, and every company choosing this approach implements it in their own way. But in abstract, views versioning is achieved by implementing an **additional layer**, which is responsible for *building* appropriate responses for the "requested versions" from the API data. It is additional layer, because business logic remains *unversioned* too, remember?
 
 Look cool, right? Such a relief, when we are not needed to tinkering and refactoring a dozen of duplicate codebases for every sneeze.
 
