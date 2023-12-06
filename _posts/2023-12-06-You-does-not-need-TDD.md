@@ -21,7 +21,7 @@ However, I firmly believe that TDD, as an engineering approach, must be practice
 Test-Driven Development is an iterative process where tests are written before code, guiding the development process by incrementally creating small and testable "units." 
 It was invented by Kent Beck.
 
-In essence, distilled TDD becomes a "test && commit || reset" (TCR) concept by Kent Beck:
+In essence, distilled TDD becomes a `"test && commit || reset"` (TCR) concept by Kent Beck:
 
 - Write a test that fails.
 - Write code that makes this test pass.
