@@ -177,7 +177,7 @@ TDD is nice! Non-pure, a bit "relaxed" TDD (which is probably most commonly used
 
 3. Your code now has at least one user (the tests), which might help in understanding how user-friendly your interfaces are.
 
-4. TDD trains you to think about how your code will be tested (yes, even 100% coverage enforces that thought [lol emoji]).
+4. TDD trains you to think about how your code will be tested (yes, even 100% coverage enforces that thought).
 
 > Any form of TDD is better than no TDD, but no TDD is better than excessive, maximalist TDD.
 
