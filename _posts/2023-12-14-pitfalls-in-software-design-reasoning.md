@@ -101,7 +101,7 @@ Comparing to this we have a very few amount of usefull material written about:
 
 
 {:refdef: style="text-align: center;"}
-![NOOO](/assets/images/pulp.gif)
+![Pulp](/assets/images/pulp.gif)
 {: refdef}
 
 
