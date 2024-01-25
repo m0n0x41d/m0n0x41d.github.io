@@ -95,7 +95,7 @@ At least, if we are coding in dynamically typed languages - we should always use
 
 ---
 
-#### *A lyrical digression about the history of the development of standard systems.*
+#### *A lyrical digression about the history of the development of type systems.*
 
 The evolution of type systems in programming languages has been a remarkable journey, beginning in an era where values were limited to numeric types.
 
