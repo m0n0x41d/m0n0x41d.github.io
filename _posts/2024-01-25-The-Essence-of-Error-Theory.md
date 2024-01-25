@@ -75,7 +75,10 @@ Exception handling occurs at higher levels of the function call chains - whereve
 
 Once again, the difference between Panic and Exception Handling approaches is that in Panic, we are throwing around exception handling code across the entire codebase, whereas Selective Exception Handling style concentrates its work only in one specific place; for example, at the very top level of the function call chain.
 
-And this "concentration" is the main benefit of the selective approach, but it might be really difficult to 
+This "concentration" is the main benefit of the selective approach, but it can be challenging to properly interpret all exceptions because 
+their handling logic is in one place, and the nature of these exceptions, as well as their causes, can vary greatly.
+
+The essence of selective exception control is that we do not simply stop working and panic; instead, we try to handle errors as meaningfully as possible.
 
 ## Declared Intentions
 
