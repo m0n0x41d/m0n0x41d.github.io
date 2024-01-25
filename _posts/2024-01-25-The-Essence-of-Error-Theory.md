@@ -156,11 +156,22 @@ Monads, first introduced in programming languages like Haskell in the early 1990
 
 ---
 
-Let's summarize:
+Let's summarize Quarantine:
 
 The Quarantine approach allows us to impeccably and clearly separate pure and impure tasks in the code.
 
 The cost of this separation is a potential complication of the codebase due to the overly strict division of logic.
 
 However, this cost seems justified because the path of inferring pure functions is incredibly beneficial as it allows us to isolate external and often unpredictable effects.
+
+
+## Conclusion 
+
+In summary, the exploration of error theory and defensive programming once again underscores the importance of robust and thoughtful software design.
+
+Approaches like Constructivism, Panic, Selective Exception Handling, and Declared Intentions each offer unique strategies to handle errors effectively, 
+improving the reliability and readability of code.
+
+These diverse error handling methods collectively contribute to developing more resilient and efficient software systems, 
+highlighting the critical role of error management in software development.
 
