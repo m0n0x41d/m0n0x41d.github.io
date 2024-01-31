@@ -13,6 +13,7 @@ Gemfile.lock
 .DS_Store
 
 new.md
+draft.md
 new_post.py
 .idea
 # General
@@ -21,7 +22,8 @@ new_post.py
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
