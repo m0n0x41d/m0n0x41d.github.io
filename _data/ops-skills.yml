@@ -1,9 +1,9 @@
 - name: Kubernetes
-  percentage: 85
+  percentage: 94
   color:
 
 - name: Gitlab CI/CD
-  percentage: 86
+  percentage: 95
   color: danger
 
 - name: Helm/Werf
@@ -11,11 +11,11 @@
   color: warning
 
 - name: AWS
-  percentage: 67
+  percentage: 71
   color: secondary
 
 - name: PostgreSQL
-  percentage: 97
+  percentage: 98
   color: info
 
 - name: Bash Scripting

@@ -1,12 +1,14 @@
-
-- title: Python Backend Engineer, at Monite
+- title: Platform Engineer, at Monite
   from: Aug 2023
   to: present
   description:
-   - Development of backend platform services using FastAPI, PostgreSQL, Kubernetes (K8s), and CI/CD methodologies, ensuring seamless operations and high performance.
+   - Enhanced Python codebase, integrating new features and comprehensive testing to improve code quality and maintainability.
    - Collaboration closely with cross-functional teams to design, implement, and optimize robust solutions for the company's platform, enhancing overall user experience.
-   - Engineering efficient coding solutions for various platform-related tasks, contributing significantly to the company's technological advancement.
-   - Involve in continuous integration and deployment processes, streamlining development workflows and ensuring the rapid delivery of quality software.
+   - Contributed to internal Python tools and libraries, vital for the efficiency of 42 microservices.
+   - Adopted Cadwyn (FastAPI versioning framework) for streamlined API versioning, enhancing operational efficiency.
+   - Orchestrating containerized environments using Kubernetes, which improves deployment and autoscaling strategies, ensures high availability of services.
+   - Established observability and alerting, leveraging logging, metrics, and tracing for service health.
+   - Integrated GitLab CI/CD pipelines for automated, consistent software delivery, enforcing code quality checks and security standards throughout the development lifecycle.
 
 - title: DevOps Engineer, at Flant
   from: Nov 2021
@@ -22,7 +24,7 @@
    - Utilized AWS to deploy and manage cloud-based infrastructure, including EC2, S3, VPC networking. Also gained some experience with Terraform for infrastructure automation.
    - Familiar with DNS and CDN configurations on CloudFlare, Azure, and AWS.
 
-- title: Database Administrator, at DataBase Intelligence
+- title: Database Administrator / Database Reliability Engineer, at DataBase Intelligence
   from: Jun 2020
   to: Nov 2021
   description:
