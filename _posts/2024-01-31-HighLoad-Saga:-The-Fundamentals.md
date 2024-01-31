@@ -1,8 +1,8 @@
 ---
-title: HighLoad Saga: The Fundamentals
+title: "HighLoad Saga. Part One: The Fundamentals"
 tags: [System Design]
 style: border
-color: secondary
+color: warning
 description: The first of the HighLoad Saga series.
 ---
 
@@ -169,9 +169,7 @@ The right combination of scalability strategies can significantly enhance system
 
 ### Scaling types
 
-1. **Vertical Scaling**: This involves upgrading to a more "powerful" machine. It's akin to replacing a smaller engine with a larger one in a car.
-
-Vertical scaling is often simpler in terms of development and operation, as it doesn't require complex coordination between multiple machines. However, the downside is that more powerful machines can be significantly more expensive, both in terms of initial cost and ongoing maintenance.
+1. **Vertical Scaling**: This involves upgrading to a more "powerful" machine. It's akin to replacing a smaller engine with a larger one in a car. Vertical scaling is often simpler in terms of development and operation, as it doesn't require complex coordination between multiple machines. However, the downside is that more powerful machines can be significantly more expensive, both in terms of initial cost and ongoing maintenance.
 
 2. **Horizontal Scaling**: This approach distributes the load across multiple, often less powerful, machines that are interconnected.
 
@@ -201,15 +199,9 @@ This includes direct operation, bug fixes, updates for new usage scenarios, adap
 
 To ensure a system is maintainable, three core principles must be considered:
 
-1. **Ease of Operation**: This focuses on how straightforward and simple it is for the maintenance staff to ensure the system's stable operation.
+1. **Ease of Operation**: This focuses on how straightforward and simple it is for the maintenance staff to ensure the system's stable operation. A system that's easy to operate reduces the time and resources needed for routine maintenance and troubleshooting, leading to lower operational costs and higher reliability.
 
-A system that's easy to operate reduces the time and resources needed for routine maintenance and troubleshooting, leading to lower operational costs and higher reliability.
-
-2. **Simplicity for Developers**: The ease with which new engineers can understand the system's architecture and start improving or expanding it is crucial.
-
-This is primarily achieved through *simplification*.
-
-A well-organized, well-documented system with clear code and architecture makes it easier for new team members to contribute effectively.
+2. **Simplicity for Developers**: The ease with which new engineers can understand the system's architecture and start improving or expanding it is crucial. This is primarily achieved through *simplification*. A well-organized, well-documented system with clear code and architecture makes it easier for new team members to contribute effectively.
 
 3. **Capability for Evolution**: This principle, closely related to the previous one, addresses how easily and quickly current engineers can implement and develop new changes.
 
