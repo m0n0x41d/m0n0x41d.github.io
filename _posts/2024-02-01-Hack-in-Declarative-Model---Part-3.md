@@ -6,8 +6,6 @@ color: info
 description: Exploring the Rabbit Hole of Recursiveness
 ---
 
-# Hack in Declarative model - Part 3
-
 Hello! This is the third post in a series delving into the Declarative Computation Model.
 
 In the [second part](https://wannahack.in/blog/Hack-in-Declarative-Model-Part-2), we solidified recursive computations as the core of the declarative model.
