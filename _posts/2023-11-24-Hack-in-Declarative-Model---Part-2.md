@@ -145,3 +145,7 @@ If the declarative model is the origin of all other models, their core, then the
 Next time, we'll delve into the fact that lists are actually a **recursive data type!** and continue chasing the declarative white rabbit.
 
 Stay healthy and happy!
+
+---
+
+[Next post of the series.](https://wannahack.in/blog/Hack-in-Declarative-Model-Part-3)

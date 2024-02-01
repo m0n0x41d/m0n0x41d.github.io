@@ -87,7 +87,7 @@ The coolest option is ***dataflow variables***!
 
 Dataflow variables are declarative variables that haven't been bound to a value yet. But the trick is that the system doesn't crash with an error; it *waits* until the variable receives its value and continues working. Thanks to this mechanism, we get *declarative parallelism* "out of the box"!
 
-I've already wrote about parallelism and non-determinism in [this blog](/2022/01/30/hack_in_codding_1.html), so the name speaks for itself.
+I've already wrote about parallelism and non-determinism in [this blog](https://wannahack.in/blog/hack-in-codding), so the name speaks for itself.
 
 Declarative parallelism is *fantastic*; there are no race conditions.
 
