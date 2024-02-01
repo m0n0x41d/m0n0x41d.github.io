@@ -1,62 +1,47 @@
-- title: HighLoad System Design, part 1
-  where: skillsmart.ru
+- title: HighLoad System Design
+  where: self-taught
   from: Jan 2024
-  description: Course based on "Designing Data-Intensive Applications" by Martin Kleppmann
+  description: The Book "Designing Data-Intensive Applications" by Martin Kleppmann
 
 - title: SoftwareDesin - Programming in Small Styles
-  where: skillsmart.ru
+  where: self-taught
   from: Dec 2023
-  description: Course based on "Exercises in Programming Style" by Cristina Videira Lopes
+  description: Studying and Practicing the book "Exercises in Programming Style" by Cristina Videira Lopes
 
 - title: Diving Deeper in Functional Programming Concepts
-  where: skillsmart.ru
+  where: A closed underground Software/System Design school, which I can't mention, sorry :)
   from: Oct 2023
   description: An in-depth course on all the basic principles of functional programming.
 
 - title: Clear Architecture
-  where: skillsmart.ru
+  where: A closed underground Software/System Design school, which I can't mention, sorry :)
   from: Sep 2023
   description: Quick and practical start in all major programming styles and architectures.
 
 - title: Clear Legacy
-  where: skillsmart.ru
+  where: A closed underground Software/System Design school, which I can't mention, sorry :)
   from: Aug 2023
   description: Learning the way to understanding legacy projects and make changes to them without breaking things. Techniques for right way to thinking of refactoring, testing and modernizing old codebases.
 
 - title: OOAP At practice
-  where: skillsmart.ru
+  where: A closed underground Software/System Design school, which I can't mention, sorry :)
   from: Jun 2023
   description: High Level Design. Practice in designing software project with focusing on a class system, following the proposed methodology step by step.
 
-- title: Fast dive in OOP
-  where: skillsmart.ru
+- title: Dive in OOP
+  where: self-taught
   from: May 2023
-  description: Based on "Object Calisthenics" by Jeff Bay and its discussions.
+  description: The book "Object Calisthenics" by Jeff Bay and its discussions.
 
-- title: How to develop and design systems of any complexity using OOP, 2nd OOAD course.
-  where: skillsmart.ru
-  from: Apr 2023
-  description: The course explores a deep understanding of the principles of object-oriented development and OO low-level design, including SOLID, applicable to the creation of systems of any complexity, got acquainted with inheritance, composition, dynamic binding and polymorphism in the context of programming in large.
+- title: OOAD courses
+  where: A closed underground Software/System Design school, which I can't mention, sorry :)
+  from: Dec 2022 - May 2023
+  description: The courses studies the low-level design of object-oriented programming (OOP) class structures and explores a deep understanding of the principles of object-oriented development, including SOLID. It covers topics such as inheritance, composition, dynamic binding, and polymorphism in the context of programming in large systems of any complexity
 
-- title: How to properly design classes based on abstract data types, 1st OOAD course
-  where: skillsmart.ru
-  from: Dec 2022
-  description: The course studies the low-level design of OOP class structures.
-
-- title: Practice in programming on ADS, first part.
-  where: skillsmart.ru
-  from: Jul 2022
-  description: Second take of this course, but now in Go language.
-
-- title: Object-oriented programming model
-  where: skillsmart.ru
-  from: Jul 2022
-  description: A course covering a scientific view of the concept of object-oriented programming, its internal structure, key constituent elements and principles, the correct application of the OOP paradigm and inheritance in design.
-
-- title: Imperative Programing model
-  where: skillsmart.ru
-  from: Jun 2022
-  description: The course covering a scientific view of the principles and practices of everyday imperative programming as an extension of the declarative computational model.
+- title: Imperative and Object-oriented programing models
+  where: self-taught
+  from: Jun 2022 - Jul 2022
+  description: The book "Concepts, Techniques, and Models of Computer Programming" and other works by Peter Van Roy
 
 - title: Functions, Methods, and Interfaces in Go
   where: coursera.org Ian Harris course
@@ -64,32 +49,22 @@
   description: Continue your exploration of the Go programming language as you learn about functions, methods, and interfaces. Topics include the implementation of functions, function types, object-orientation in Go, methods, and class instantiation. As with the first course in this series, you’ll have an opportunity to create your own Go applications so you can practice what you’re learning.
 
 - title: Functional programming
-  where: skillsmart.ru
+  where: self-taught
   from: Apr 2022
-  description: Practical course based on the materials of the book "Functional Programming Using F#" by Michael R. Hansen
+  description: The book "Functional Programming Using F#" by Michael R. Hansen
 
 - title: Declarative programming model
-  where: skillsmart.ru
+  where: self-taught
   from: Feb 2022
-  description: The next course in the series. Learns to program in a declarative computational model, and to reduce the complexity of a system of any scale to a linear sum of the complexities of its subsystems.
-
-- title: How to understand everything in programming.
-  where: skillsmart.ru
-  from: Feb 2022
-  description: The first, preparatory course from a series of courses on the essence of programming paradigms. The course introduces the scientific view of programming - its fundamental components, and along the way introduces the basics of the multi-paradigm programming language Julia. Based on "Concepts, Techniques, and Models of Computer Programming" by Peter Van Roy and Control Structures for Programming Languages by David A. Fisher
+  description: From the book "Concepts, Techniques, and Models of Computer Programming" and other works by Peter Van Roy
 
 - title: Getting Started with Go
   where: coursera.org Ian Harris course
   from: Jan 2022
   description: Basics of Go language. Topics include data types, protocols, formats, and writing code that incorporates RFCs and JSON.
 
-- title: Practice in programming on ADS, second part.
-  where: skillsmart.ru
-  from: Jan 2022
-  description: Сontinuation of the first course. The topics include trees, tree traversals, binary search trees, balanced binary search trees, heaps, and graphs. The topics cover the definition and implementation of these data structures and algorithms, including operations such as insertion, deletion, and search. Specific topics covered include red-black trees, B-trees, depth-first search, and breadth-first search.
-
-- title: Practice in programming on ADS, first part.
-  where: skillsmart.ru
+- title: Practice in programming Algorithms and Data Structures
+  where: self-taught
   from: Oct 2021
   description: Based on material from Carnegie Mellon 15-121 and Stanford CS106B. The topics include the analysis of algorithmic complexity, linked lists, variable-size arrays, stacks, queues, hash tables, universal hashing, perfect hashing, associative arrays, sets, caches, and Bloom filters. The topics cover the implementation and analysis of these data structures and algorithms, including their strengths and weaknesses, as well as different methods for dealing with collisions and errors.
 
@@ -99,21 +74,11 @@
   description: 2 months of deep dive into GIT, Docker, Kubernetes and Gitlab CI/CD.
 
 - title: Clear Code
-  where: skillsmart.ru
+  where: self-taught
   from: Jul 2021
-  description: A course on developing a good coding style, Based on "Code Complete" by Steve McConnell and "Clean Code" by Robert C. Martin
+  description: Developing a good coding style, dased on "Code Complete" by Steve McConnell and "Clean Code" by Robert C. Martin
 
-- title: 28 tasks of increasing complexity (LeetCode)
-  where: skillsmart.ru
-  from: May 2021
-  description: 28 tasks of increasing complexity in a game format close to real work. Additional practice in passing tests and working with git / github
-
-- title: Fundamentals of OOP, testing, simple technologies
-  where: skillsmart.ru
-  from: Jan 2021
-  description: Quick dive in OOP model, and as addition work with files, archives, images, etc. Basic staff.
-
-- title: Programming from scratch
-  where: skillsmart.ru
-  from: Dec 2020
-  description: Practical introduction to programming. Base concepts.
+- title: Learning Programming Through Solving Algorithmic Challenges with Python (Similar to Codewars and More)
+  where: self-taught
+  from: Dec 2020 - May 2021
+  description: Engaged in programming and creating test cases.
