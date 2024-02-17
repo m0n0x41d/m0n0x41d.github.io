@@ -1,5 +1,5 @@
 ---
-title: The Zen of Dependencies.
+title: The Zen of Dependencies
 tags: [Software Design]
 style: border
 color: success
