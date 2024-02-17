@@ -351,7 +351,7 @@ Finally, we can derive a universal and absolutely correct definition of dependen
 
 As a useful practice, I suggest you return to the 9 types of dependencies and recall suitable examples from your experience.
 
-Try to determine the properties of dependencies using this new definition. In the case of dependencies on dependencies, try to describe super-specifications.
+To determine the properties of dependencies using this new definition, consider the following: In the case of dependencies on dependencies, and especially in the case of higher-order dependencies, attempt to describe super-specifications.
 
 Please remember that introducing dependencies, as well as eliminating them, are insanely important factors in making architectural decisions.
 
