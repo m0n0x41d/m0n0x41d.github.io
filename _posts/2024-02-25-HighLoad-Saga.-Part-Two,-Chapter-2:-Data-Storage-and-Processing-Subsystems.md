@@ -319,4 +319,4 @@ The *anti-caching* technique permits the removal of infrequently used data from 
 
 ## Coming Up Next
 
-In this post, we've explored various index structures, delving into their essential nature and the impact of their inner workings. This knowledge should aid us in better understanding data storage options, enabling us to select and optimize storage solutions that bring the most benefits to our projects. However, our exploration doesn't end here. Stay tuned, as next time we will take a look on transaction processing or analytics.
+In this post, we've explored various index structures, delving into their essential nature and the impact of their inner workings. This knowledge should aid us in better understanding data storage options, enabling us to select and optimize storage solutions that bring the most benefits to our projects. However, our exploration doesn't end here. Stay tuned, as next time we will take a look on transaction processing and analytics.
