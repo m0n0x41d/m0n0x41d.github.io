@@ -74,7 +74,7 @@ Moreover, by and large, the first two characteristics are quite enough to make t
 
 While correct, writing code within such constraints is possible but almost unrealistically challenging to make it expressive. This is precisely why the `shared` characteristic is proposed.
 
-> Over the evolution of computational models in programming, the Declarative model eventually expanded with concepts of state and object - aiming to increase the expressiveness of program code.
+> Over the evolution of computational models in programming, the Declarative model eventually expanded with concepts of state and object - aiming to increase the expressiveness of the code.
 
 Indeed, theorizing heavily, it would be great to truly have TOP support out of the box. It might seem that the concept of a typestate isn't implemented because it's too specific and applicable only in certain, narrow areas of programming, but that's not entirely true.
 
