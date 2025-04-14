@@ -11,8 +11,7 @@ type AboutAnimationsProps = {
 /**
  * About page animations
  * Store all animations for about page in one place
- * @param {AnimationEl} waveRef - wave element
- * @param {AnimationEl} ballRef - ball element
+ * @param {AboutAnimationsProps} props - Animation properties 
  */
 export const AboutAnimations = ({ ballRef, waveRef }: AboutAnimationsProps) => {
     gsap.registerPlugin(ScrollTrigger);

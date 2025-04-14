@@ -1,6 +1,6 @@
 ---
 import LayoutSecondary from "@layouts/LayoutSecondary.astro";
-import { About } from "@modules/About";
+import { About as AboutModule } from "@modules/About";
 import { FooterContact } from "@modules/FooterContact";
 import { isValidLanguage, DEFAULT_LANGUAGE, type Language } from "@utils/language";
 
@@ -37,7 +37,7 @@ const { title, description } = translations[currentLang];
   showFooterContact={false}
   showFooter={false}
 >
-  <About 
+  <AboutModule 
     client:visible 
     lang={currentLang}
     data={{

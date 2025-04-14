@@ -12,10 +12,7 @@ type SkillsAnimationsProps = {
 /**
  *  Skills page animations
  * Store all animations for skills page in one place
- * @param {React.RefObject<HTMLDivElement>} textRef - text element
- * @param {React.RefObject<HTMLDivElement>} skillsWrapperRef - skills wrapper element
- * @param {React.RefObject<HTMLDivElement>} skillsRef - skills element
- * @param {React.RefObject<HTMLDivElement>} firstHalfRef - first half element
+ * @param {SkillsAnimationsProps} props - Animation properties
  */
 export const AnimationsSkills = ({
     textRef,

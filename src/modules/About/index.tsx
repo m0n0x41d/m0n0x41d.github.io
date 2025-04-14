@@ -130,8 +130,6 @@ export const About = ({ data = {}, lang = 'en' }: AboutProps) => {
     // Use provided button or fallback to translation
     const buttonData = showMoreButton || translations[lang].moreButton;
 
-    const aboutRef = useRef(null);
-
     /**
      * Init refs for animations
      */
