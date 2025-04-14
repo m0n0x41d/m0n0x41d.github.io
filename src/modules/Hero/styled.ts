@@ -135,17 +135,11 @@ export const HeroText = styled.div<{
         color: ${Theme.tertiary};
         white-space: nowrap;
         vertical-align: baseline !important;
-        margin-left: 0.2em;
         min-height: auto;
         min-width: auto;
         
         ${MediaQuery.max("sm")} {
-            display: inline-block;
-            min-width: auto;
-            width: auto;
-            top: auto;
-            left: auto;
-            transform: none;
+            margin-left: -1.2em;
         }
         
         &::after {
@@ -153,7 +147,6 @@ export const HeroText = styled.div<{
         }
     }
     
-    /* Стили для курсора */
     .caret {
         color: ${Theme.tertiary};
         font-weight: normal;
@@ -177,6 +170,12 @@ export const HeroText = styled.div<{
         .line-one, .line-two {
             display: block;
             white-space: nowrap;
+        }
+
+        .line-two {
+            ${MediaQuery.max("sm")} {
+                margin-left: 2em;
+            }
         }
         
         .line-one {
@@ -269,10 +268,9 @@ export const HeroText = styled.div<{
             }
         }
         
-        /* Обновляем стили для первой строки */
         &:first-of-type {
             margin-bottom: 0;
-            display: block; /* Блочное отображение вместо flex */
+            display: block;
             height: 100px;
             white-space: nowrap;
             
@@ -312,7 +310,6 @@ export const HeroText = styled.div<{
         transition: color 0.3s ease;
     }
 
-    /* Удаляем все конфликтующие стили */
     .typing-effect-visible::after {
         display: none;
     }

@@ -37,7 +37,7 @@ export const Hero = ({ lang = 'en', data = {} }: HeroProps) => {
         en: {
             introPrefix: "Let's",
             title: "our <span>future</span>",
-            description: "I am Ivan Zakutnii – professional software and systems engineer, offering consulting and services for your business.",
+            description: "Ivan Zakutnii — software and systems engineering expert creating tailored solutions that drive business evolution.",
             buttons: [
                 {
                     text: "Get in touch",
@@ -55,7 +55,7 @@ export const Hero = ({ lang = 'en', data = {} }: HeroProps) => {
         ru: {
             introPrefix: "Давайте",
             title: "наше <span>будущее</span>",
-            description: "Я Иван Закутний – профессиональный инженер программных и системных решений. Я предлагаю консалтинг и услуги для развития вашего бизнеса.",
+            description: "Иван Закутний — эксперт в области программной и системной инженерии, создающий индивидуальные решения, способствующие эволюционному росту бизнеса.",
             buttons: [
                 {
                     text: "Связаться",
