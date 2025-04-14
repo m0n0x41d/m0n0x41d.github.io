@@ -1,0 +1,34 @@
+---
+import LayoutSecondary from "@layouts/LayoutSecondary.astro";
+import { ProjectsAll } from "@modules/ProjectsAll";
+import { isValidLanguage, DEFAULT_LANGUAGE, type Language } from "@utils/language";
+
+// Define static paths for language versions
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'ru' } },
+  ];
+}
+
+const { lang } = Astro.params;
+const currentLang = isValidLanguage(lang as string) ? (lang as Language) : DEFAULT_LANGUAGE;
+
+// Define translations for the projects page
+const translations = {
+  en: {
+    title: "Projects | Your Site",
+    description: "Explore our showcase of completed and ongoing projects.",
+  },
+  ru: {
+    title: "Проекты | Ваш Сайт",
+    description: "Изучите наше портфолио завершенных и текущих проектов."
+  }
+};
+
+const { title, description } = translations[currentLang];
+---
+
+<LayoutSecondary title={title} description={description} lang={currentLang}>
+  <ProjectsAll client:visible lang={currentLang} />
+</LayoutSecondary> 

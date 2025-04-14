@@ -1,0 +1,60 @@
+---
+import LayoutSecondary from "@layouts/LayoutSecondary.astro";
+import { About } from "@modules/About";
+import { FooterContact } from "@modules/FooterContact";
+import { isValidLanguage, DEFAULT_LANGUAGE, type Language } from "@utils/language";
+
+// Define static paths for language versions
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'ru' } },
+  ];
+}
+
+const { lang } = Astro.params;
+const currentLang = isValidLanguage(lang as string) ? (lang as Language) : DEFAULT_LANGUAGE;
+
+// Define translations for the about page
+const translations = {
+  en: {
+    title: "About | Ivan Zakutnii",
+    description: "Learn more about my experience, expertise, and consulting approach.",
+  },
+  ru: {
+    title: "О нас | Иван Закутний",
+    description: "Узнайте больше о моем опыте, экспертизе и подходе к консалтингу."
+  }
+};
+
+const { title, description } = translations[currentLang];
+---
+
+<LayoutSecondary 
+  title={title} 
+  description={description} 
+  lang={currentLang}
+  showFooterContact={false}
+  showFooter={false}
+>
+  <About 
+    client:visible 
+    lang={currentLang}
+    data={{
+      showWave: false,
+      isAboutMorePage: true,
+      showBlob: false,
+      title: currentLang === 'en' ? "More details about me" : "Подробнее обо мне"
+    }}
+  />
+  
+  <div class="contact-section">
+    <FooterContact client:visible lang={currentLang} />
+  </div>
+</LayoutSecondary>
+
+<style>
+  .contact-section {
+    margin-top: 80px; /* Отступ между секцией About и контактами */
+  }
+</style> 

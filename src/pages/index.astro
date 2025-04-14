@@ -1,0 +1,58 @@
+---
+import { DEFAULT_LANGUAGE } from "@utils/language";
+
+// Функция для определения языка пользователя на сервере
+function detectUserLanguage(request) {
+  try {
+    // Проверяем заголовок Accept-Language
+    const acceptLanguage = request.headers.get("accept-language");
+    if (acceptLanguage && acceptLanguage.includes("ru")) {
+      return "ru";
+    }
+    
+    // Проверяем cookies, если есть
+    const cookies = request.headers.get("cookie");
+    if (cookies && cookies.includes("preferredLanguage=ru")) {
+      return "ru";
+    }
+  } catch (error) {
+    console.error("Error detecting language:", error);
+  }
+  
+  return DEFAULT_LANGUAGE;
+}
+
+const userLang = detectUserLanguage(Astro.request);
+
+return Astro.redirect(`/${userLang}`);
+---
+
+<!-- Резервная страница, если редирект не сработает -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Redirecting...</title>
+  <meta http-equiv="refresh" content={`0;url=/${userLang}`} />
+  <script define:vars={{ defaultLang: DEFAULT_LANGUAGE }}>
+    function getBrowserLanguage() {
+      const savedLang = localStorage.getItem('preferredLanguage');
+      if (savedLang && (savedLang === 'en' || savedLang === 'ru')) {
+        return savedLang;
+      }
+      
+      const browserLang = navigator.language || navigator.userLanguage;
+      return browserLang && browserLang.toLowerCase().startsWith('ru') ? 'ru' : 'en';
+    }
+
+    const language = getBrowserLanguage();
+    window.location.href = `/${language}`;
+    
+    localStorage.setItem('preferredLanguage', language);
+  </script>
+</head>
+<body>
+  <p>Redirecting to the site...</p>
+</body>
+</html> 

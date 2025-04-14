@@ -1,0 +1,191 @@
+---
+import type { CollectionEntry } from 'astro:content';
+// import BaseLayout from '@layouts/Layout.astro'; // Remove old layout
+import LayoutSecondary from '@layouts/LayoutSecondary.astro'; // Import the correct layout
+import { format } from 'date-fns'; // Optional: for formatting date
+import { Container } from '@components/Container'; // Import Container
+
+type Props = {
+	post: CollectionEntry<'blog'>;
+	showFooter?: boolean;
+}
+
+const { post, showFooter = false } = Astro.props;
+const { Content } = await post.render();
+
+// Extract title and description for the LayoutSecondary
+const title = post.data.title;
+const description = post.data.description;
+const lang = post.data.language;
+---
+<LayoutSecondary 
+	title={title} 
+	description={description} 
+	showFooterContact={false} 
+	showFooter={showFooter}
+	lang={lang}
+>
+	<div class="blog-wrapper" data-dark-section> 
+		<Container client:only="react"> {/* Use Container */} 
+			<article class="prose fade-in-article"> {/* Add fade-in-article class */} 
+				<h1>{title}</h1>
+				<p class="publish-date">
+					Published on: {format(post.data.pubDate, 'MMMM d, yyyy')} {/* Format date */} 
+				</p>
+				{post.data.heroImage && 
+					<img 
+						width={720} 
+						height={360} 
+						src={post.data.heroImage} 
+						alt={post.data.title + " hero image"}
+						style={{ marginBottom: '2rem', borderRadius: '8px' }} // Add some basic styling
+					/>
+				}
+					
+				{/* Render the markdown content */}
+				<Content />
+			</article>
+		</Container>
+	</div>
+</LayoutSecondary>
+
+<style>
+	/* Remove .page-content styles */
+
+	.blog-wrapper {
+		background-color: var(--bg-element-secondary);
+		padding: 100px 0; /* Match padding from AboutStyled? Adjust as needed */
+		min-height: calc(100vh - var(--header-height, 80px) - var(--footer-height, 100px)); /* Adjust footer/header height vars */
+		position: relative;
+		overflow: hidden; 
+	}
+
+	.publish-date {
+		color: var(--text-secondary); /* Correct variable */
+		font-size: 0.9em;
+		margin-bottom: 1rem;
+	}
+
+	.prose {
+		color: var(--text-default); /* Correct variable */
+		font-size: 16px; 
+		line-height: 25px;
+		max-width: 720px; /* Constrain width of the content */
+		margin: 0 auto; /* Center the content */
+	}
+
+	/* Add fade-in animation for the article */
+	.fade-in-article {
+		opacity: 0;
+		transform: translateY(20px);
+		animation: fadeInUp 0.5s forwards 0.1s;
+	}
+
+	@keyframes fadeInUp {
+		from {
+			opacity: 0;
+			transform: translateY(20px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	.prose :global(h1, h2, h3, h4, h5, h6) {
+		color: var(--text-default); /* Correct variable */
+		margin-top: 1.5em;
+		margin-bottom: 0.5em;
+	}
+
+	.prose :global(p) {
+		line-height: inherit; 
+		margin-bottom: 1em;
+	}
+
+	.prose :global(a) {
+		color: var(--tertiary); /* Correct variable */
+		text-decoration: underline; 
+	}
+
+	.prose :global(a:hover) {
+		text-decoration: none;
+	}
+
+	.prose :global(img) {
+		max-width: 100%;
+		height: auto;
+		border-radius: 4px;
+		margin: 2em 0; 
+	}
+
+	.prose :global(ul, ol) {
+		padding-left: 2em;
+		margin-bottom: 1em;
+	}
+
+	.prose :global(li) {
+		margin-bottom: 0.5em;
+	}
+
+	.prose :global(blockquote) {
+		/* Use the green accent color for the left border */
+		border-left: 4px solid #61DF61; 
+		padding-left: 1em;
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 1.5em;
+		margin-bottom: 1.5em;
+		font-style: italic;
+		color: #f0f0f0; /* Light color for text */
+		background-color: rgba(97, 223, 97, 0.1); /* Subtle green background */
+		padding: 1em;
+		border-radius: 0 4px 4px 0;
+	}
+
+	/* Add a subtle highlight for important text within blockquotes */
+	.prose :global(blockquote strong) {
+		color: #61DF61; /* Green highlight for important text */
+	}
+
+	/* Assuming code-related variables exist, adjust names if needed */
+	.prose :global(code) {
+		background-color: var(--secondary); 
+		color: var(--text-default); 
+		padding: 0.2em 0.4em;
+		font-size: 0.9em;
+		border-radius: 3px;
+	}
+
+	.prose :global(pre) {
+		background-color: var(--secondary); 
+		color: var(--text-default); 
+		padding: 1em;
+		border-radius: 4px;
+		overflow-x: auto;
+		margin: 1.5em 0;
+	}
+
+	.prose :global(pre code) {
+		background-color: transparent;
+		padding: 0;
+		font-size: inherit;
+	}
+
+	/* Centered blog images with styling */
+	.prose :global(p img) {
+		display: block;
+		margin: 2rem auto;
+		max-width: 100%;
+		border-radius: 8px;
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+	}
+
+	/* Special styling for GIFs - no shadow to avoid clashing with animation */
+	.prose :global(p img[src$=".gif"]) {
+		box-shadow: none;
+		border: 1px solid rgba(255, 255, 255, 0.1);
+	}
+
+	/* Add more .prose :global() rules as needed */
+</style> 

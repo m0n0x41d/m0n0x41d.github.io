@@ -1,0 +1,72 @@
+---
+import LayoutSecondary from "@layouts/LayoutSecondary.astro";
+import { getLanguageFromURL, DEFAULT_LANGUAGE, type Language } from "@utils/language";
+
+// Get preferred language from URL or fallback to default
+const url = new URL(Astro.request.url);
+const lang = getLanguageFromURL(url);
+
+// Define translations for the 404 page
+const translations = {
+  en: {
+    title: "404 - Page Not Found",
+    description: "The page you're looking for doesn't exist or has been moved. If you clicked on EN from a Russian blog post and got here - it means this post hasn't been translated to English yet, sorry!",
+    message: "Oops! Page Not Found",
+    back_home: "Back to Home"
+  },
+  ru: {
+    title: "404 - Страница не найдена",
+    description: "Страница, которую вы ищете, не существует или была перемещена. Если вы нажали на RU со страницы блога на английском и попали сюда – значит этот пост не переведен на русский, извините!",
+    message: "Упс! Страница не найдена",
+    back_home: "Вернуться на главную"
+  }
+};
+
+const { title, description, message, back_home } = translations[lang];
+---
+
+<LayoutSecondary title={title} description={description} lang={lang} showFooter={false} showFooterContact={false}>
+  <div class="not-found-container">
+    <h1>{message}</h1>
+    <p>{description}</p>
+    <a href={`/${lang}`} class="home-link">{back_home}</a>
+  </div>
+</LayoutSecondary>
+
+<style>
+  .not-found-container {
+    text-align: center;
+    padding: 10% 5%;
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: calc(100vh - var(--header-height, 80px) - 200px);
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--text-default);
+  }
+
+  p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: var(--text-default);
+  }
+
+  .home-link {
+    display: inline-block;
+    background-color: var(--secondary);
+    color: var(--text-default);
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.2s, color 0.2s;
+  }
+
+  .home-link:hover {
+    background-color: var(--tertiary);
+    color: var(--secondary);
+  }
+</style>

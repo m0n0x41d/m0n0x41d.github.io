@@ -1,0 +1,10 @@
+---
+import { DEFAULT_LANGUAGE } from '@utils/language';
+const redirectTarget = `/${DEFAULT_LANGUAGE}/blog`;
+---
+
+<meta http-equiv="refresh" content={`0;url=${redirectTarget}`} />
+<script define:vars={{ redirectTarget }}>
+  window.location.href = redirectTarget;
+</script>
+<!-- This page is intentionally empty as it only performs a redirect --> 

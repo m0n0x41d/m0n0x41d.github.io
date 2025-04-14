@@ -1,0 +1,93 @@
+---
+import { NormalizeCSS } from "../styles/normalize";
+import { Global } from "@emotion/react";
+import { PreviewPng } from "@static/images";
+import { Header } from "@modules/Header";
+import { Footer } from "@modules/Footer";
+import { isValidLanguage, DEFAULT_LANGUAGE, type Language } from "@utils/language";
+
+interface Props {
+    title: string;
+    description: string;
+    lang?: Language;
+    canonicalUrl?: string;
+    alternateUrls?: {
+        en?: string;
+        ru?: string;
+    };
+}
+
+const { 
+    title, 
+    description, 
+    lang = DEFAULT_LANGUAGE,
+    canonicalUrl,
+    alternateUrls = {}
+} = Astro.props;
+
+const currentLang = isValidLanguage(lang) ? lang : DEFAULT_LANGUAGE;
+const siteUrl = "https://ivanzakutnii.com"; // Замените на ваш домен
+const currentUrl = canonicalUrl || Astro.url.pathname;
+const fullUrl = `${siteUrl}${currentUrl}`;
+
+// Определяем альтернативные URL для других языков
+const enUrl = alternateUrls.en || (currentLang === 'en' ? fullUrl : fullUrl.replace(/^(\/ru\/)/, '/en/'));
+const ruUrl = alternateUrls.ru || (currentLang === 'ru' ? fullUrl : fullUrl.replace(/^(\/en\/)/, '/ru/'));
+---
+
+<!doctype html>
+<html lang={currentLang}>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.ico?v=2" />
+        <meta name="generator" content={Astro.generator} />
+        <meta name="description" content={description} />
+        <meta http-equiv="content-language" content={currentLang} />
+
+        <!-- Мета-теги для SEO -->
+        <meta
+            name="robots"
+            content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+        <meta
+            name="keywords"
+            content="Ivan Zakutnii, software engineer, systems engineer, consulting, platform architecture, AI systems integration, technical leadership"
+        />
+
+        <!-- Canonical URL -->
+        <link rel="canonical" href={fullUrl} />
+        
+        <!-- Альтернативные языковые версии (hreflang) -->
+        <link rel="alternate" hreflang="en" href={enUrl} />
+        <link rel="alternate" hreflang="ru" href={ruUrl} />
+        <link rel="alternate" hreflang="x-default" href={enUrl} />
+
+        <meta name="color-scheme" content="light only" />
+
+        <!-- Open Graph / Социальные сети -->
+        <meta property="og:url" content={fullUrl} />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={title} />
+        <meta property="og:image" content={PreviewPng.src} />
+        <meta property="og:description" content={description} />
+        <meta property="og:locale" content={currentLang === 'en' ? 'en_US' : 'ru_RU'} />
+        <meta property="og:site_name" content="Ivan Zakutnii" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={PreviewPng.src} />
+        <meta property="twitter:domain" content="ivanzakutnii.com" />
+        <meta property="twitter:url" content={fullUrl} />
+        
+        <title>{title}</title>
+        <Global styles={NormalizeCSS} />
+    </head>
+    <body class="is-homepage">
+        <Header client:only="react" currentLang={currentLang} />
+        <slot />
+        <Footer client:visible lang={currentLang} />
+    </body>
+</html>

@@ -1,0 +1,20 @@
+---
+import { getCollection } from 'astro:content';
+import BlogPostLayout from '@layouts/BlogPostLayout.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog'); // Fetch all blog posts
+  const paths = posts.map(post => {
+    const slugParts = post.slug.split('/'); // Split slug like 'en/first-post'
+    const slug = slugParts[slugParts.length - 1]; // Get the last part ('first-post')
+    return {
+        params: { lang: post.data.language, slug: slug }, // Use correct lang and extracted slug
+        props: { post },
+    }
+  });
+  return paths;
+}
+
+const { post } = Astro.props;
+---
+<BlogPostLayout post={post} showFooter={false} /> 

@@ -1,0 +1,10 @@
+---
+title: 'Мой Первый Пост на Русском'
+description: 'Это первая запись в блоге, написанная на русском языке.'
+pubDate: 2024-07-26
+language: 'ru'
+heroImage: '/images/blog/placeholder2.jpg' 
+tags: ['пример', 'astro', 'русский']
+---
+
+

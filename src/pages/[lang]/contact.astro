@@ -1,0 +1,40 @@
+---
+import LayoutSecondary from "@layouts/LayoutSecondary.astro";
+import { FooterContact } from "@modules/FooterContact";
+import { isValidLanguage, DEFAULT_LANGUAGE, type Language } from "@utils/language";
+
+// Define static paths for language versions
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'ru' } },
+  ];
+}
+
+const { lang } = Astro.params;
+const currentLang = isValidLanguage(lang as string) ? (lang as Language) : DEFAULT_LANGUAGE;
+
+// Define translations for the contact page
+const translations = {
+  en: {
+    title: "Contact | Your Site",
+    description: "Get in touch with us for inquiries, collaborations or questions.",
+  },
+  ru: {
+    title: "Контакты | Ваш Сайт",
+    description: "Свяжитесь с нами для запросов, сотрудничества или вопросов."
+  }
+};
+
+const { title, description } = translations[currentLang];
+---
+
+<LayoutSecondary 
+  title={title} 
+  description={description} 
+  lang={currentLang} 
+  showFooterContact={false}
+  showFooter={false}
+>
+  <FooterContact client:visible lang={currentLang} />
+</LayoutSecondary> 
