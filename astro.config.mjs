@@ -4,7 +4,6 @@ import CompressionPlugin from "vite-plugin-compression";
 import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
-    output: 'static',
     i18n: {
         defaultLocale: "en",
         locales: ["en", "ru"],
@@ -23,7 +22,6 @@ export default defineConfig({
         }),
     ],
     renderers: ["@astrojs/renderer-react"],
-    prerender: true,
     vite: {
         plugins: [CompressionPlugin()],
     },
