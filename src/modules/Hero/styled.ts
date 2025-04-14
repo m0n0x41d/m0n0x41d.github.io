@@ -174,7 +174,11 @@ export const HeroText = styled.div<{
 
         .line-two {
             ${MediaQuery.max("sm")} {
-                margin-left: -0.2em;
+                margin-left: 0;
+                text-align: center;
+                width: 100%;
+                display: flex;
+                justify-content: center;
             }
         }
         
@@ -186,7 +190,9 @@ export const HeroText = styled.div<{
             white-space: nowrap;
             
             ${MediaQuery.max("sm")} {
-                margin-left: 1.2em;
+                margin-left: 0;
+                justify-content: center;
+                width: 100%;
             }
             
             .typing-container {
@@ -414,14 +420,10 @@ export const DescriptionContainer = styled.div<{
     width: 100%;
     margin-bottom: 20px;
     
-    /* Русская версия для всех экранов */
     ${props => props.$lang === 'ru' && `
-        /* Базовые стили для русской версии */
     `}
     
-    /* Английская версия для всех экранов */
     ${props => props.$lang === 'en' && `
-        /* Базовые стили для английской версии */
     `}
     
     ${MediaQuery.max("lg")} {
@@ -429,14 +431,10 @@ export const DescriptionContainer = styled.div<{
         text-align: center;
         padding: 0 15px;
         
-        /* Русская версия для планшетов */
         ${props => props.$lang === 'ru' && `
-            /* Стили для русской версии на планшетах */
         `}
         
-        /* Английская версия для планшетов */
         ${props => props.$lang === 'en' && `
-            /* Стили для английской версии на планшетах */
         `}
     }
     
@@ -445,16 +443,12 @@ export const DescriptionContainer = styled.div<{
         max-width: 95%;
         margin: 0 auto 20px;
         
-        /* Русская версия для мобильных */
         ${props => props.$lang === 'ru' && `
             padding: 0 15px;
             max-width: 100%;
-            /* Дополнительные стили для русской версии на мобильных */
         `}
         
-        /* Английская версия для мобильных */
         ${props => props.$lang === 'en' && `
-            /* Дополнительные стили для английской версии на мобильных */
         `}
     }
     

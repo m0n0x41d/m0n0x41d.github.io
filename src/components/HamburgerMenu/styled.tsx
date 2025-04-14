@@ -6,7 +6,12 @@ import { MediaQuery } from "@styles/mediaQuery";
 
 export const HamburgerMenuStyled = styled.div<{
     $isOpen: boolean;
-}>``;
+}>`
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 50;
+`;
 
 export const Navigation = styled.nav<{
     $isOpen: boolean;
@@ -16,11 +21,12 @@ export const Navigation = styled.nav<{
     background: ${Theme.bgElementSecondary};
     height: 100vh;
     transition: transform 0.3s ease-in-out;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     overflow: auto;
     padding: 200px 20px 50px;
+    z-index: 49;
 
     ${MediaQuery.min("lg")} {
         width: 40vw;
@@ -81,7 +87,7 @@ export const HamburgerMenuButton = styled.button<{
 }>`
     background: ${Theme.bgElementSecondary};
     position: relative;
-    z-index: 3;
+    z-index: 50;
 
     color: ${Theme.textDefault};
     border-radius: 50%;
