@@ -1,7 +1,13 @@
 import { Container } from "@components/Container";
 import styled from "@emotion/styled";
+import { keyframes } from "@emotion/react";
 import { Theme } from "@styles/colors";
 import { MediaQuery } from "@styles/mediaQuery";
+
+const blink = keyframes`
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+`;
 
 export const HeroStyled = styled.section`
     width: 100%;
@@ -32,6 +38,7 @@ export const HeroText = styled.div<{
     padding-bottom: 10px;
     width: 100%;
     max-width: 500px;
+    height: 450px;
 
     ${MediaQuery.max("lg")} {
         justify-content: center;
@@ -39,6 +46,11 @@ export const HeroText = styled.div<{
         text-align: center;
         padding-bottom: 0;
         max-width: 100%;
+        height: 400px;
+    }
+
+    ${MediaQuery.max("sm")} { 
+        height: 350px;
     }
 
     ${(props) =>
@@ -54,24 +66,27 @@ export const HeroText = styled.div<{
         font-size: 90px;
         line-height: 1.1;
         margin: 0 0 10px 0;
-        word-break: break-word;
+        word-break: keep-all;
+        white-space: nowrap;
         position: relative;
         width: 100%;
-        height: auto;
-        min-height: 200px; /* Фиксированная минимальная высота */
-        display: block; /* Гарантируем блочное отображение */
+        height: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
         
         ${MediaQuery.max("lg")} {
             font-size: 50px;
             margin-bottom: 15px;
-            min-height: 120px; /* Меньшая высота для планшетов */
+            height: 140px;
         }
 
         ${MediaQuery.max("sm")} { 
             font-size: 40px;
             line-height: 1.2;
             margin-bottom: 10px;
-            min-height: 100px; /* Еще меньшая высота для мобильных */
+            height: 120px;
+            white-space: nowrap;
         }
         
         &.second-line {
@@ -81,6 +96,7 @@ export const HeroText = styled.div<{
         .typing-effect {
             display: inline-block;
             min-width: 80px;
+            white-space: nowrap;
             
             ${MediaQuery.max("lg")} {
                 min-width: 60px;
@@ -115,15 +131,14 @@ export const HeroText = styled.div<{
 
     .typing-effect {
         display: inline-block;
-        position: static !important; /* Принудительно статическое позиционирование */
+        position: static !important;
         color: ${Theme.tertiary};
         white-space: nowrap;
-        vertical-align: baseline !important; /* Выравнивание по базовой линии */
+        vertical-align: baseline !important;
         margin-left: 0.2em;
         min-height: auto;
         min-width: auto;
         
-        /* Убираем фиксированную ширину для мобильной версии */
         ${MediaQuery.max("sm")} {
             display: inline-block;
             min-width: auto;
@@ -134,19 +149,15 @@ export const HeroText = styled.div<{
         }
         
         &::after {
-            content: '|';
-            position: absolute;
-            right: -15px;
-            bottom: 0;
-            animation: blink 1s infinite;
-            opacity: 1;
-            font-weight: normal;
-            height: 1em;
-            line-height: 1;
-            display: inline-block;
-            position: static; 
-            margin-left: 5px; 
+            display: none;
         }
+    }
+    
+    /* Стили для курсора */
+    .caret {
+        color: ${Theme.tertiary};
+        font-weight: normal;
+        animation: ${blink} 1s infinite;
     }
     
     .hero-title-ru {
@@ -155,7 +166,7 @@ export const HeroText = styled.div<{
         line-height: 1;
         margin-bottom: 20px;
         width: 100%;
-        min-height: 170px;
+        height: 170px;
         max-width: 100%;
         position: relative;
         
@@ -173,12 +184,14 @@ export const HeroText = styled.div<{
             display: flex; 
             position: relative;
             width: 100%;
+            white-space: nowrap;
             
             .typing-container {
                 position: relative;
                 display: inline-block;
                 margin-left: 10px;
                 color: ${Theme.tertiary};
+                white-space: nowrap;
             }
             
             span.typing-effect {
@@ -215,7 +228,7 @@ export const HeroText = styled.div<{
         ${MediaQuery.max("lg")} {
             font-size: 50px;
             margin-bottom: 15px;
-            min-height: 130px;
+            height: 130px;
             
             .line-one {
                 margin-bottom: 5px;
@@ -226,7 +239,7 @@ export const HeroText = styled.div<{
             font-size: 40px;
             line-height: 1.1;
             margin-bottom: 10px;
-            min-height: 110px;
+            height: 110px;
         }
     }
 
@@ -236,33 +249,51 @@ export const HeroText = styled.div<{
         padding-left: 0;
         line-height: 1.2;
         overflow: visible;
-        min-height: 100px; /* Фиксированная высота */
         width: 100%;
+        white-space: nowrap;
+        
+        .typing-container {
+            position: relative;
+            display: inline-block;
+            
+            .typing-effect {
+                position: relative;
+                color: ${Theme.tertiary};
+            }
+            
+            .caret {
+                color: ${Theme.tertiary};
+                animation: blink 1s infinite;
+                font-weight: normal;
+                height: 100%;
+            }
+        }
         
         /* Обновляем стили для первой строки */
         &:first-of-type {
             margin-bottom: 0;
             display: block; /* Блочное отображение вместо flex */
-            min-height: 100px;
+            height: 100px;
+            white-space: nowrap;
             
             ${MediaQuery.max("lg")} {
-                min-height: 60px;
+                height: 60px;
             }
             
             ${MediaQuery.max("sm")} {
-                min-height: 50px;
+                height: 50px;
             }
         }
         
         &:last-of-type {
-            min-height: 100px;
+            height: 100px;
             
             ${MediaQuery.max("lg")} {
-                min-height: 60px;
+                height: 60px;
             }
             
             ${MediaQuery.max("sm")} {
-                min-height: 50px;
+                height: 50px;
             }
         }
     }

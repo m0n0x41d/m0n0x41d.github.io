@@ -25,6 +25,13 @@ export const Hero = ({ lang = 'en', data = {} }: HeroProps) => {
     const [isDeleting, setIsDeleting] = useState(false);
     const [isComplete, setIsComplete] = useState(false);
 
+    // Находим самое длинное слово для каждого языка для предустановки размера
+    const maxWordLengthRu = Math.max(...["строить", "хакнем"].map(word => word.length));
+    const maxWordLengthEn = Math.max(...["hack", "build"].map(word => word.length));
+    // Коэффициенты для разных языков (русский требует больше места)
+    const ruMultiplier = 0.8; // em
+    const enMultiplier = 0.75; // em
+
     // Translations for the Hero component
     const translations = {
         en: {
@@ -125,14 +132,21 @@ export const Hero = ({ lang = 'en', data = {} }: HeroProps) => {
         ? `
         <div class="hero-title-ru">
             <div class="line-one">
-                <span class="black-text">Давайте</span> <span class="typing-effect">${displayText}</span><span class="caret ${isComplete ? 'hidden' : ''}">|</span>
+                <span class="black-text">Давайте</span> 
+                <span class="typing-container" style="min-width: ${maxWordLengthRu * ruMultiplier}em; display: inline-block;">
+                    <span class="typing-effect">${displayText}</span><span class="caret ${isComplete ? 'hidden' : ''}">|</span>
+                </span>
             </div>
             <div class="line-two"><span class="black-text">наше</span> <span>будущее</span></div>
         </div>
         `
         : `
         <h1>
-            <div class="title-line">${content.introPrefix} <span class="typing-effect">${displayText}</span></div>
+            <div class="title-line">${content.introPrefix} 
+                <span class="typing-container" style="min-width: ${maxWordLengthEn * enMultiplier}em; display: inline-block; position: relative;">
+                    <span class="typing-effect">${displayText}</span><span class="caret ${isComplete ? 'hidden' : ''}">|</span>
+                </span>
+            </div>
             <div class="title-line">${content.title}</div>
         </h1>
         `;
