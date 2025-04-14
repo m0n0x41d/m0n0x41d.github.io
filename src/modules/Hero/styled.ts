@@ -179,6 +179,7 @@ export const HeroText = styled.div<{
                 width: 100%;
                 display: flex;
                 justify-content: center;
+                gap: 5px;
             }
         }
         
@@ -190,9 +191,10 @@ export const HeroText = styled.div<{
             white-space: nowrap;
             
             ${MediaQuery.max("sm")} {
-                margin-left: 0;
-                justify-content: center;
-                width: 100%;
+                margin-left: 1em;
+                width: calc(100% - 2em);
+                box-sizing: border-box;
+                overflow: visible;
             }
             
             .typing-container {
@@ -204,7 +206,6 @@ export const HeroText = styled.div<{
                 
                 ${MediaQuery.max("sm")} {
                     margin-left: 0px;
-                    // margin-top: 3px;
                     font-size: 40px;
                     vertical-align: baseline;
                 }

@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { MediaQuery } from "@styles/mediaQuery";
 
 export const StyledLanguageSwitcher = styled.a`
   display: inline-block;
@@ -15,5 +16,11 @@ export const StyledLanguageSwitcher = styled.a`
   &:hover {
     background-color: var(--tertiary);
     color: var(--secondary);
+  }
+  
+  ${MediaQuery.max("sm")} {
+    padding: 0.4em 0.8em;
+    margin-right: 0px;
+    font-size: 0.9em;
   }
 `; 

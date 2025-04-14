@@ -3,14 +3,30 @@ import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 import { Theme } from "@styles/colors";
 import { MediaQuery } from "@styles/mediaQuery";
+import { type Language } from "@utils/language";
 
 export const HamburgerMenuStyled = styled.div<{
     $isOpen: boolean;
+    currentLang?: Language;
 }>`
-    position: relative;
-    display: flex;
-    align-items: center;
-    z-index: 50;
+    /* Селективная изоляция от влияния других стилей */
+    position: static !important;
+    z-index: 10000 !important;
+    isolation: isolate !important;
+    display: block;
+    box-sizing: border-box;
+    
+    /* Предотвращаем влияние других элементов */
+    transform: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto !important;
+    max-width: none !important;
+    
+    /* Восстанавливаем шрифты */
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
 `;
 
 export const Navigation = styled.nav<{
@@ -27,6 +43,9 @@ export const Navigation = styled.nav<{
     overflow: auto;
     padding: 200px 20px 50px;
     z-index: 49;
+    /* Правильные шрифты для меню */
+    font-family: inherit;
+    font-size: inherit;
 
     ${MediaQuery.min("lg")} {
         width: 40vw;
@@ -49,7 +68,7 @@ export const Navigation = styled.nav<{
 
         li {
             list-style: none;
-
+            font-family: inherit;
             font-weight: 700;
             cursor: pointer;
 
@@ -63,7 +82,10 @@ export const Navigation = styled.nav<{
             }
 
             a {
+                font-family: inherit;
                 transition: color 0.3s;
+                text-decoration: none;
+                color: inherit;
                 &:hover {
                     color: ${Theme.tertiary};
                 }
@@ -72,37 +94,49 @@ export const Navigation = styled.nav<{
 
         li:last-of-type {
             margin-bottom: 0;
-            a {
-                /* Optional: different styling for the last item if needed */
-            }
         }
-
-        /* Add the Blog list item */
-        <li><a href="/blog">Blog</a></li> 
     }
 `;
 
 export const HamburgerMenuButton = styled.button<{
     $isOpen: boolean;
+    currentLang?: Language;
 }>`
+    box-sizing: border-box;
+    cursor: pointer;
+    
+    /* Основные стили */
     background: ${Theme.bgElementSecondary};
     position: relative;
-    z-index: 50;
+    z-index: 10001 !important;
+    display: block;
+    margin-left: 10px;
 
     color: ${Theme.textDefault};
     border-radius: 50%;
-    cursor: pointer;
     transition: background 0.3s, border-color 0.3s, color 0.3s;
 
     border: 1px solid ${Theme.textDefault};
-    width: 70px;
-    height: 70px;
-
-    ${MediaQuery.max("lg")} {
-        width: 50px;
-        height: 50px;
+    width: 55px !important;
+    height: 55px !important;
+    
+    /* Защита от внешних влияний */
+    transform: none !important;
+    
+    /* Восстанавливаем шрифты */
+    font-family: inherit;
+    
+    ${MediaQuery.max("sm")} {
+        /* Базовые стили для обоих языков */
+        margin-right: 0px;
+        
+        /* Специальные стили только для русской версии */
+        ${props => props.currentLang === 'ru' && `
+            // margin-right: 15px; /* Увеличиваем отступ для русской версии */
+            margin-left: 0px;
+        `}
     }
-
+    
     ${({ $isOpen }) =>
         $isOpen &&
         css`

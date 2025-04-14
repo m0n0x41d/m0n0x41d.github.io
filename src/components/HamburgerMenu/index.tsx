@@ -61,7 +61,7 @@ export const HamburgerMenu = ({ currentLang = 'en' }: HamburgerMenuProps) => {
     }, [isOpen]);
 
     return (
-        <S.HamburgerMenuStyled $isOpen={isOpen}>
+        <S.HamburgerMenuStyled $isOpen={isOpen} currentLang={currentLang}>
             <S.HamburgerMenuButton
                 $isOpen={isOpen}
                 onClick={handleMenu}
@@ -69,6 +69,7 @@ export const HamburgerMenu = ({ currentLang = 'en' }: HamburgerMenuProps) => {
                 aria-expanded={isOpen}
                 role="button"
                 tabIndex={0}
+                currentLang={currentLang}
             >
                 <S.HamburgerMenuButtonLine $isOpen={isOpen} />
                 <S.HamburgerMenuButtonLine $isOpen={isOpen} />

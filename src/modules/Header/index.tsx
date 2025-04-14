@@ -13,12 +13,14 @@ export const Header = ({ currentLang = 'en' }: HeaderProps) => {
     const headerRef = useRef(null);
 
     return (
-        <S.HeaderStyled ref={headerRef} data-dark-section>
-            <Logo currentLang={currentLang} />
-            <S.HeaderControls>
-                <LanguageSwitcher currentLang={currentLang} />
-                <HamburgerMenu currentLang={currentLang} />
-            </S.HeaderControls>
+        <S.HeaderStyled ref={headerRef} data-dark-section $lang={currentLang}>
+            <section className='container'>
+                <Logo currentLang={currentLang} />
+                <S.HeaderControls $lang={currentLang}>
+                    <LanguageSwitcher currentLang={currentLang} />
+                    <HamburgerMenu currentLang={currentLang} />
+                </S.HeaderControls>
+            </section>
         </S.HeaderStyled>
     );
 };
