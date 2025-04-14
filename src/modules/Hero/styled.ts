@@ -269,15 +269,35 @@ export const HeroText = styled.div<{
         overflow: visible;
         width: 100%;
         white-space: nowrap;
+
+        ${MediaQuery.max("sm")} {
+            white-space: normal;
+            margin-left: 10px;
+            padding-top: 10px;
+            margin-bottom: 10px;
+
+        }
         
         .typing-container {
             position: relative;
             display: inline-block;
             margin-left: 10px;
+
+            ${MediaQuery.max("sm")} {
+                margin-left: 5px;
+            }
+
+            ${MediaQuery.max("lg")} {
+                margin-left: 0px;
+            }
             
             .typing-effect {
                 position: relative;
                 color: ${Theme.tertiary};
+
+                ${MediaQuery.max("sm")} {
+                    margin-left: -35px;
+                }
             }
             
             .caret {
@@ -465,7 +485,6 @@ export const DescriptionContainer = styled.div<{
             line-height: 20px;
         `}
         
-        /* Английская версия текста */
         ${props => props.$lang === 'en' && `
             /* Стили для английского текста */
             font-size: 14px;
@@ -473,13 +492,11 @@ export const DescriptionContainer = styled.div<{
         `}
         
         ${MediaQuery.max("sm")} {
-            /* Русская версия текста на мобильных */
             ${props => props.$lang === 'ru' && `
                 font-size: 13px;
                 line-height: 18px;
             `}
             
-            /* Английская версия текста на мобильных */
             ${props => props.$lang === 'en' && `
                 font-size: 13px;
                 line-height: 18px;
