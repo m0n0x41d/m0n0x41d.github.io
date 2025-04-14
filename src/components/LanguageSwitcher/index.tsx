@@ -54,8 +54,15 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
         setTargetUrl(getTargetUrl());
     }, [tgtLang]); // Re-run if target language changes
 
+    const handleLanguageSwitch = (e: React.MouseEvent<HTMLAnchorElement>) => {
+        localStorage.setItem('preferredLanguage', tgtLang);
+    };
+
     return (
-        <StyledLanguageSwitcher href={targetUrl}>
+        <StyledLanguageSwitcher
+            href={targetUrl}
+            onClick={handleLanguageSwitch}
+        >
             {tgtLang.toUpperCase()}
         </StyledLanguageSwitcher>
     );

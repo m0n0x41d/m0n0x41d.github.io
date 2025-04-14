@@ -341,7 +341,11 @@ export const HeroGrid = styled.div<{
     ${MediaQuery.max("lg")} {
         grid-template-columns: 1fr;
         gap: 10px;
-        padding: 0 15px;
+        padding: 0 25px;
+    }
+
+    ${MediaQuery.max("sm")} {
+        padding: 0 30px;
     }
 
     ${(props) =>

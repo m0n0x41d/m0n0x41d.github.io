@@ -16,7 +16,7 @@ interface LogoProps {
 }
 
 export const Logo: FC<LogoProps> = ({ currentLang = 'en' }) => {
-    const homeUrl = currentLang === 'en' ? '/' : '/ru';
+    const homeUrl = currentLang === 'en' ? '/en' : '/ru';
 
     return (
         <S.LogoStyled>

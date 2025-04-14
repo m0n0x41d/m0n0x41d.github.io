@@ -50,8 +50,8 @@ export const Skills = ({ data = {}, lang = 'en' }: SkillsProps) => {
                 },
                 {
                     title: "Systems Engineering",
-                    description: "Building complex systems with a focus on reliability, performance, and maintainability. I excel at untangling technical complexity and creating elegant solutions that can evolve with changing requirements while maintaining operational excellence.",
-                    techStack: "Distributed Systems, Database Design (SQL & NoSQL), Scalability, Fault Tolerance, Performance Optimization, Message Queues, Observability, Monitoring"
+                    description: "Creating and modeling complex systems - both human and artificial - with a focus on stability and results-oriented approach.",
+                    techStack: "Domain-Driven Design (DDD), Behavior-Driven Development (BDD), Process Modeling, Ontology Identification, Dependency Analysis, Agent Role Definition, Subsystem Boundary Establishment"
                 }
             ]
         },
@@ -66,17 +66,17 @@ export const Skills = ({ data = {}, lang = 'en' }: SkillsProps) => {
                 {
                     title: "Архитектура Платформ",
                     description: "Проектирование масштабируемых и надежных архитектур платформ, поддерживающих рост бизнеса и технологическую эволюцию.",
-                    techStack: "Облачная Инфраструктура, Микросервисы, Дизайн API, Системная Интеграция"
+                    techStack: "Облачная Инфраструктура, Микросервисы VS Монолит, Дизайн API, Системная Интеграция"
                 },
                 {
-                    title: "Интеграция AI Систем",
-                    description: "Внедрение и интеграция возможностей искусственного интеллекта в существующие системы для улучшения функциональности и пользовательского опыта.",
+                    title: "Разработка и Интеграция AI Систем",
+                    description: "Внедрение и интеграция возможностей искусственного интеллекта в существующие системы для оптимизации процессов и улучшения пользовательского опыта.",
                     techStack: "LLMs, Машинное Обучение, Обработка Естественного Языка, Компьютерное Зрение"
                 },
                 {
                     title: "Системная Инженерия",
-                    description: "Создание сложных систем с фокусом на надежность, производительность и удобство поддержки.",
-                    techStack: "Распределенные Системы, Проектирование Баз Данных, Масштабируемость, Отказоустойчивость"
+                    description: "Создание и моделирование сложных систем – человеческих и искусственных с фокусом на стабильность и ориентированием на результаты.",
+                    techStack: "Domain-Driven Design (DDD), Behavior-Driven Development (BDD), Моделирование Процессов, Выявление Онтологий, Анализ Зависимостей, Определение Ролей Агентов, Установление Границ Подсистем"
                 }
             ]
         }
