@@ -1,41 +1,14 @@
 ---
 import { DEFAULT_LANGUAGE } from "@utils/language";
-import type { APIContext } from 'astro';
-
-// Функция для определения языка пользователя на сервере
-function detectUserLanguage(request: Request): string {
-  try {
-    // Проверяем заголовок Accept-Language
-    const acceptLanguage = request.headers.get("accept-language");
-    if (acceptLanguage && acceptLanguage.includes("ru")) {
-      return "ru";
-    }
-    
-    // Проверяем cookies, если есть
-    const cookies = request.headers.get("cookie");
-    if (cookies && cookies.includes("preferredLanguage=ru")) {
-      return "ru";
-    }
-  } catch (error) {
-    console.error("Error detecting language:", error);
-  }
-  
-  return DEFAULT_LANGUAGE;
-}
-
-const userLang = detectUserLanguage(Astro.request);
-
-return Astro.redirect(`/${userLang}`);
 ---
 
-<!-- Резервная страница, если редирект не сработает -->
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
   <title>Redirecting...</title>
-  <meta http-equiv="refresh" content={`0;url=/${userLang}`} />
+  <meta http-equiv="refresh" content={`0;url=/${DEFAULT_LANGUAGE}`} />
   <script is:inline define:vars={{ defaultLang: DEFAULT_LANGUAGE }}>
     function getBrowserLanguage() {
       const savedLang = localStorage.getItem('preferredLanguage');
