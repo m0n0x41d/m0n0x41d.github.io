@@ -128,28 +128,33 @@ export const Hero = ({ lang = 'en', data = {} }: HeroProps) => {
     }, [displayText, isDeleting, isComplete, wordIndex, words, lang]);
 
     // Generate animated title based on the current language
-    const animatedTitle = lang === 'ru'
-        ? `
-        <div class="hero-title-ru">
-            <div class="line-one">
-                <span class="black-text">Давайте</span> 
-                <span class="typing-container" style="min-width: ${maxWordLengthRu * ruMultiplier}em; display: inline-block;">
-                    <span class="typing-effect">${displayText}</span><span class="caret ${isComplete ? 'hidden' : ''}">|</span>
+    const renderRussianTitle = () => (
+        <div className="hero-title-ru">
+            <div className="line-one">
+                <span className="black-text">Давайте</span>
+                <span className="typing-container" style={{ minWidth: `${maxWordLengthRu * ruMultiplier}em`, display: 'inline-block' }}>
+                    <span className="typing-effect">{displayText}</span>
+                    <span className={`caret ${isComplete ? 'hidden' : ''}`}>|</span>
                 </span>
             </div>
-            <div class="line-two"><span class="black-text">наше</span> <span>будущее</span></div>
+            <div className="line-two">
+                <span className="black-text">наше</span> <span>будущее</span>
+            </div>
         </div>
-        `
-        : `
+    );
+
+    const renderEnglishTitle = () => (
         <h1>
-            <div class="title-line">${content.introPrefix} 
-                <span class="typing-container" style="min-width: ${maxWordLengthEn * enMultiplier}em; display: inline-block; position: relative;">
-                    <span class="typing-effect">${displayText}</span><span class="caret ${isComplete ? 'hidden' : ''}">|</span>
+            <div className="title-line">
+                {content.introPrefix}
+                <span className="typing-container" style={{ minWidth: `${maxWordLengthEn * enMultiplier}em`, display: 'inline-block', position: 'relative' }}>
+                    <span className="typing-effect">{displayText}</span>
+                    <span className={`caret ${isComplete ? 'hidden' : ''}`}>|</span>
                 </span>
             </div>
-            <div class="title-line">${content.title}</div>
+            <div className="title-line" dangerouslySetInnerHTML={{ __html: content.title }} />
         </h1>
-        `;
+    );
 
     return (
         <S.HeroStyled data-light-section>
@@ -157,7 +162,7 @@ export const Hero = ({ lang = 'en', data = {} }: HeroProps) => {
                 <S.HeroGrid $noImage={!hasImage}>
                     <FadeIn>
                         <S.HeroText $noImage={!hasImage}>
-                            <div dangerouslySetInnerHTML={{ __html: animatedTitle }} />
+                            {lang === 'ru' ? renderRussianTitle() : renderEnglishTitle()}
                             <div
                                 dangerouslySetInnerHTML={{
                                     __html: content.description,
