@@ -163,11 +163,13 @@ export const Hero = ({ lang = 'en', data = {} }: HeroProps) => {
                     <FadeIn>
                         <S.HeroText $noImage={!hasImage}>
                             {lang === 'ru' ? renderRussianTitle() : renderEnglishTitle()}
-                            <div
-                                dangerouslySetInnerHTML={{
-                                    __html: content.description,
-                                }}
-                            />
+                            <S.DescriptionContainer>
+                                <div
+                                    dangerouslySetInnerHTML={{
+                                        __html: content.description,
+                                    }}
+                                />
+                            </S.DescriptionContainer>
                             <S.ButtonsContainer>
                                 {content.buttons.map((btn, index) => (
                                     <Button

@@ -174,7 +174,7 @@ export const HeroText = styled.div<{
 
         .line-two {
             ${MediaQuery.max("sm")} {
-                margin-left: 2em;
+                margin-left: -0.2em;
             }
         }
         
@@ -185,13 +185,25 @@ export const HeroText = styled.div<{
             width: 100%;
             white-space: nowrap;
             
+            ${MediaQuery.max("sm")} {
+                margin-left: 1.2em;
+            }
+            
             .typing-container {
                 position: relative;
                 display: inline-block;
-                margin-left: 10px;
+                margin-left: 20px;
                 color: ${Theme.tertiary};
                 white-space: nowrap;
+                
+                ${MediaQuery.max("sm")} {
+                    margin-left: 0px;
+                    // margin-top: 3px;
+                    font-size: 40px;
+                    vertical-align: baseline;
+                }
             }
+
             
             span.typing-effect {
                 display: inline;
@@ -254,6 +266,7 @@ export const HeroText = styled.div<{
         .typing-container {
             position: relative;
             display: inline-block;
+            margin-left: 10px;
             
             .typing-effect {
                 position: relative;
@@ -391,5 +404,91 @@ export const ButtonsContainer = styled.div`
         flex-direction: column;
         align-items: center;
         gap: 2px;
+    }
+`;
+
+export const DescriptionContainer = styled.div<{
+    $lang?: 'en' | 'ru';
+}>`
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 20px;
+    
+    /* Русская версия для всех экранов */
+    ${props => props.$lang === 'ru' && `
+        /* Базовые стили для русской версии */
+    `}
+    
+    /* Английская версия для всех экранов */
+    ${props => props.$lang === 'en' && `
+        /* Базовые стили для английской версии */
+    `}
+    
+    ${MediaQuery.max("lg")} {
+        max-width: 100%;
+        text-align: center;
+        padding: 0 15px;
+        
+        /* Русская версия для планшетов */
+        ${props => props.$lang === 'ru' && `
+            /* Стили для русской версии на планшетах */
+        `}
+        
+        /* Английская версия для планшетов */
+        ${props => props.$lang === 'en' && `
+            /* Стили для английской версии на планшетах */
+        `}
+    }
+    
+    ${MediaQuery.max("sm")} {
+        padding: 0 20px;
+        max-width: 95%;
+        margin: 0 auto 20px;
+        
+        /* Русская версия для мобильных */
+        ${props => props.$lang === 'ru' && `
+            padding: 0 15px;
+            max-width: 100%;
+            /* Дополнительные стили для русской версии на мобильных */
+        `}
+        
+        /* Английская версия для мобильных */
+        ${props => props.$lang === 'en' && `
+            /* Дополнительные стили для английской версии на мобильных */
+        `}
+    }
+    
+    div {
+        color: initial;
+        font-size: 14px;
+        line-height: 20px;
+        
+        /* Русская версия текста */
+        ${props => props.$lang === 'ru' && `
+            /* Стили для русского текста */
+            font-size: 14px;
+            line-height: 20px;
+        `}
+        
+        /* Английская версия текста */
+        ${props => props.$lang === 'en' && `
+            /* Стили для английского текста */
+            font-size: 14px;
+            line-height: 20px;
+        `}
+        
+        ${MediaQuery.max("sm")} {
+            /* Русская версия текста на мобильных */
+            ${props => props.$lang === 'ru' && `
+                font-size: 13px;
+                line-height: 18px;
+            `}
+            
+            /* Английская версия текста на мобильных */
+            ${props => props.$lang === 'en' && `
+                font-size: 13px;
+                line-height: 18px;
+            `}
+        }
     }
 `;
