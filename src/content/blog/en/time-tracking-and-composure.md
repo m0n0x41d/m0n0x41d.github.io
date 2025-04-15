@@ -158,7 +158,8 @@ Of course, it's also worth considering a scenario where you're in a position of 
 
 In this case, you can purposefully spend time on nonsense, so that later in the context of the week you can see how much goes there. Perhaps such a metric will help you stop doing this nonsense.
 
-In general, it's entirely your subjective matter to determine what is nonsense for you and what is everyday life/routine/rest. The topic of quality rest is a candidate for a separate article, subscribe! < INSERT LINK TO LINKS PAGE >
+In general, it's entirely your subjective matter to determine what is nonsense for you and what is everyday life/routine/rest. The topic of quality rest is a candidate for a separate article, [subscribe](https://links.ivanzakutnii.com)! 
+
 
 ## Practical implementation of the system
 
