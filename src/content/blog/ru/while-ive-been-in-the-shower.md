@@ -29,8 +29,8 @@ tags: ['AI', 'VibeCodding']
 
 Я думаю что язык общения ИИ и человека не будет языком сюсюкания, точнее так – ИИ будет общаться с нами по мере уровня нашего интеллектуального развития – с идиотами по идиотски, с инженерами по инженерному.
 
-> ChatGPT please describe me like I am 5yo VS ChatGPT reason line PhD in <TOPIC> while you answer my questions about it. 
- 
+> "ChatGPT, please describe it for me like I am a 5-year-old" VS "ChatGPT, reason like a PhD in \<TOPIC\> while you answer my questions about it."
+
 Чувствуете разницу? Разница лишь в нашем намерении – бесконечно тупеть или умнеть.
 
 И вот поэтому страха нет. 

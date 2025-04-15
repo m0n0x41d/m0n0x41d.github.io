@@ -29,8 +29,8 @@ Although... I don't exclude such a vector of "evolution."
 
 I think the language of communication between AI and humans won't be baby talk. More precisely – AI will communicate with us according to our level of intellectual development – with idiots in an idiotic way, with engineers in an engineering way.
 
-> ChatGPT please describe me like I am 5yo VS ChatGPT reason like PhD in <TOPIC> while you answer my questions about it.
- 
+> "ChatGPT, please describe it for me like I am a 5-year-old" VS "ChatGPT, reason like a PhD in \<TOPIC\> while you answer my questions about it."
+
 Feel the difference? The difference is only in our intention – to endlessly become dumber or smarter.
 
 And that's why there's no fear.
