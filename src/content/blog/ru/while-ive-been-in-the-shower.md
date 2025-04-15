@@ -1,7 +1,7 @@
 ---
 title: 'AI работает пока я моюсь в душе'
 description: 'Короткая заметка о настоящем и будущем.'
-pubDate: 2024-04-15
+pubDate: 2025-04-15
 language: 'ru'
 heroImage: '/images/heroes/been-in-the-shower.png' 
 tags: ['AI', 'VibeCodding']

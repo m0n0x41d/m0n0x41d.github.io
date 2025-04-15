@@ -1,7 +1,7 @@
 ---
 title: "AI Works While I'm in the Shower"
 description: 'A short note about the present and future.'
-pubDate: 2024-04-15
+pubDate: 2025-04-15
 language: 'en'
 heroImage: '/images/heroes/been-in-the-shower.png' 
 tags: ['AI', 'VibeCodding']
