@@ -1,0 +1,11 @@
+[project]
+name = "m0n0x41d-blog"
+version = "0.1.0"
+description = "Just my blog"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dotenv>=0.9.9",
+    "httpx>=0.28.1",
+    "pydantic-settings>=2.9.1",
+]
