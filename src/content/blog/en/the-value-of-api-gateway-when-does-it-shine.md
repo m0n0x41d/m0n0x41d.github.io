@@ -1,11 +1,9 @@
 ---
 title: "The Value of API Gateway: When Does It Shine?"
 description: When to utilize an API Gateway, understand the features and values it provides, and determine situations where it may not be necessary.
-pubDate: 2023-11-15T00:00:00Z
+pubDate: 2023-11-15
 language: 'en'
 tags: [System Design, Tools]
-style: border
-color: warning
 ---
 
 # The Value of API Gateway: When Does It Shine?
