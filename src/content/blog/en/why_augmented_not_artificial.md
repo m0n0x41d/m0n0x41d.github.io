@@ -25,7 +25,7 @@ My interpretation lies somewhere based on my experience, and still somewhat grav
 TLDR;
 
 Artificial Intelligence – is about autonomous, independent agents that work completely without humans 🤘🏻
-Augmented Intelligence – is about a conditional symbiosis of human and AI, where each strengthens the other 👤🤝🏻🤖
+Augmented Intelligence – is about a something like symbiosis of human and AI, where each strengthens the other 👤🤝🏻🤖
 
 In reality, the second (augmented) already works much more often and better than the first, is already much more present here than completely independent artificial. And as technology develops, the symbiosis mindset still looks more appealing than the "exploitation" mindset, even, not if – but when, artificial neural networks become even more cognitively powerful!
 
