@@ -39,7 +39,7 @@ Let's return to my experience and move away from science fiction and anthropolog
 
 I've already started talking about mindset, and this is very important. Unfortunately or fortunately, AI is quite limited, especially as soon as we try to apply it in a narrow, vertical niche. 
 
-When communicating with conditional ChatGPT or Claude, many people get the impression that "it's very smart," "it can do almost anything." This impression forms not only among individuals, but also among companies, entrepreneurs who attempt to build new business with LLM or start a new one altogether.
+When communicating with things like ChatGPT or Claude, many people get the impression that "it's very smart," "it can do almost anything." This impression forms not only among individuals, but also among companies, entrepreneurs who attempt to build new business with LLM or start a new one altogether.
 
 Even quite experienced engineers and managers can find themselves believing that AI systems are something completely magical, quite simple in terms of implementation – "well, it's already smart, right? It'll figure out our mess somehow, and we'll live happily ever after!"
 
