@@ -57,7 +57,7 @@ Already now, more and more quality AI systems are appearing, but all these survi
 
 Moreover, these systems themselves are obviously aimed at being used by end users – people, outside the organization as clients, or inside, if we're talking about AI Platform.
 
-I'm getting at the fact that even if we consider a scenario of a "very vertical" agent/AI system – it was still modeled, created by people, and serves people. Whatever AI is, however we consider it – it's _already_ inextricably linked with our large and small systems. 
+I'm getting at the fact that even if we consider a scenario of a "very vertical" agent/AI system – it was still modeled, created by people, and serves people. Whatever AI is, however we consider it – it's _already_ closely linked with our large and small systems. 
 
 What about systems that still manage to be "without LLM," and which might even manage to remain so for a long time, due to business specifics – here it still makes sense to talk about Augmented, because the efficiency of people working in such organizations can (and often already does) accelerate thanks to rational use of neural networks in their work. 
 
