@@ -63,7 +63,7 @@ What about systems that still manage to be "without LLM," and which might even m
 
 ## Two scenarios of AI usage
 
-If we consider from the end user's perspective, AI has now become that very magic box, with which the user can start becoming very stupid (Artificial Intelligence mindset – the user almost completely delegates slow thinking to LLMs, and their cognitive abilities degrade), or develop, learn, get smarter, accelerate their work on routine tasks with the help of LLMs, quickly get feedback, strictly evaluate it – delegate a lot of fast thinking to LLM so it happens _even faster_, some selected part of slow thinking, but continue to _make decisions_ (intermediate and final, as well as _apply mental effort_ to the task __independently__ (Augmented Intelligence mindset).
+If we consider from the end user's perspective, AI has now become that very magic box, with which the user can start becoming very stupid (Artificial Intelligence mindset – the user almost completely delegates slow thinking to LLMs, and their cognitive abilities degrade), or develop, learn, get smarter, accelerate their work on routine tasks with the help of LLMs, quickly get feedback, strictly evaluate it – delegate a lot of fast thinking to LLM so it happens _even faster_, some selected part of slow thinking, but continue to _make decisions_ intermediate and final, as well as _apply mental effort_ to the task __!!!independently!!!__ (Augmented Intelligence mindset).
 
 ## What's next?
 
